@@ -1,0 +1,24 @@
+.movies-table td{
+    padding: 5px;
+}
+.row0 {
+    text-align: center;
+}
+
+
+.rating-5{background: #18891d}
+.rating-4{background: #92C83E}
+.rating-3{background: #f1f130}
+.rating-2{background: #ef7985}
+.rating-x{background: #d8d8d8}
+
+@media screen and (max-width: 640px) {
+    .movies-table td{
+        padding: 2px;
+        font-size: 0.9em;
+    }
+    .movies-table tr td:first-child{
+        max-width: 165px;
+    }
+
+}

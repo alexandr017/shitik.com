@@ -1,0 +1,136 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKrE3kQtZQ4pF3D51XcAM4olXcLtA.woff2) format('woff2');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKrE3kQtZQ4pF3D51zcAM4olXcLtA.woff2) format('woff2');
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKrE3kQtZQ4pF3D51fcAM4olXcLtA.woff2) format('woff2');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKrE3kQtZQ4pF3D51bcAM4olXcLtA.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKrE3kQtZQ4pF3D51jcAM4olXc.woff2) format('woff2');
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKuE3kQtZQ4pF3D7-P5Fe4KmF0xvdjqjw.woff2) format('woff2');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKuE3kQtZQ4pF3D7-P5FecKmF0xvdjqjw.woff2) format('woff2');
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKuE3kQtZQ4pF3D7-P5FewKmF0xvdjqjw.woff2) format('woff2');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKuE3kQtZQ4pF3D7-P5Fe0KmF0xvdjqjw.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/themes/v3/fonts/wXKuE3kQtZQ4pF3D7-P5FeMKmF0xvdg.woff2) format('woff2');
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDujMR7eS2AopSg.woff2) format('woff2');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuHMR7eS2AopSg.woff2) format('woff2');
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDunMR7eS2AopSg.woff2) format('woff2');
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDubMR7eS2AopSg.woff2) format('woff2');
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDurMR7eS2AopSg.woff2) format('woff2');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuvMR7eS2AopSg.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/themes/v3/fonts/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMR7eS2Ao.woff2) format('woff2');
+}

@@ -1,0 +1,70 @@
+p, .content b, .content span {
+    margin-bottom: 1.2rem;
+}
+
+.content ul, .content ol {
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+}
+
+.content .date-pub {
+    color: #a9a9a9;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    display: block;
+    margin: 15px 0;
+}
+
+.content h2, .content .h2 {
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+}
+
+
+.blockquote {
+    position: relative;
+    padding: 5px 45px;
+    margin: 0 0 15px;
+    text-align: center;
+    background: #f9f9f9;
+    font-style: italic;
+}
+
+.blockquote span{
+    font-weight: bold;
+}
+
+.blockquote:before {
+    content: '“';
+    left: 10px;
+}
+
+.blockquote:after {
+    content: '”';
+    right: 10px;
+}
+
+.blockquote:before, .blockquote:after {
+    position: absolute;
+    color: #BFE2FF;
+    font-size: 3em;
+    font-style: normal;
+}
+
+.post-nav{
+    margin-top: 10px;
+}
+
+.post-img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px !important;
+}
+
+.content table {
+    margin: auto;
+}

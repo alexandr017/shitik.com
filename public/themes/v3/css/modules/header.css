@@ -1,0 +1,140 @@
+
+
+.container{width: 800px;margin: auto;max-width: 100%;}
+.menu{
+    background: #974cd1;
+}
+.menu-ul{
+    list-style-type: none;
+    padding: 23px 0;
+    margin: 0;
+}
+.menu-li{
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.menu-ul .menu-li:first-child {
+    margin-left: 0;
+}
+
+.right-item-menu{
+    float: right;
+
+}
+
+.mob-menu-label{
+    display: none;
+}
+
+.menu-a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.menu-li.active{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.first-word{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(79, 20, 126, 0.46);
+    margin-right: 2px;
+}
+
+.link-to-home:before {
+    content: '';
+    background: url("/themes/v3/images/index/logo.svg");
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+}
+
+.show{
+    display: block !important;
+}
+nav ul.show{
+    position: absolute;
+    background: #974cd1;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .container{width: 600px;}
+}
+
+
+@media screen and (max-width: 786px){
+    .mob-menu-label{
+        display: block;
+        text-align: right;
+        padding: 1em;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .container {
+        width: calc(100% - 30px);
+        margin: 0 15px;
+    }
+    .menu-ul{
+        display: none;
+    }
+    .menu-li{
+        display: block;
+        text-align: center;
+        line-height: 2em;
+    }
+}
+
+.telegram-vote {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    width: 800px;
+    max-width: calc(100% - 50px);
+    margin: auto;
+    z-index: 1000;
+    background: #eae6e6;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.telegram-vote p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#yesVote {
+    background: #009688;
+    color: #fff;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#noVote {
+    background: #E91E63;
+    color: #fff;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

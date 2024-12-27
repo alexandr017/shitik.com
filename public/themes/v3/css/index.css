@@ -1,0 +1,166 @@
+body{background: url('/themes/v3/images/index/background.jpg') no-repeat fixed center center;background-size: cover;}
+
+.modules-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    max-height: 480px;
+    width: 100%;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    margin: 1px;
+    border-radius: 10px;
+    border: solid 3px #974cd1;
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #974cd1;
+    text-decoration: none;
+}
+
+.purple{background: #974cd1; color: #fff; border-color: #974cd1}
+.disable{background: #fff;  border-color: #d9d9d9; cursor: default !important; color: #bbb}
+
+
+.item:not(.purple):hover{
+    transform: rotate(360deg);
+    transition:all 400ms ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-man{background: url("/themes/v3/images/index/man.svg"); background-size: contain}
+.icon-blog{background: url("/themes/v3/images/index/blog.svg"); background-size: contain}
+.icon-portfolio{background: url("/themes/v3/images/index/promotion.svg"); background-size: contain}
+.icon-travel{background: url("/themes/v3/images/index/around.svg"); background-size: contain}
+.icon-projects{background: url("/themes/v3/images/index/project-management.svg"); background-size: contain}
+.icon-library{background: url("/themes/v3/images/index/books.svg"); background-size: contain}
+.icon-stats{background: url("/themes/v3/images/index/bar-chart.svg"); background-size: contain}
+.icon-web{background: url("/themes/v3/images/index/web.svg"); background-size: contain}
+.icon-site{background: url("/themes/v3/images/index/logo.svg"); background-size: contain}
+
+
+
+
+@media screen and (max-width: 768px){
+    .modules-wrap{
+        max-width: 315px;
+        max-height: 315px;
+
+    }
+    .item{
+        width: 97px;
+        height: 97px;
+
+    }
+}
+
+
+
+/*starts lightning effect css*/
+.lightning-effect {
+    position: relative;
+    overflow: hidden;
+
+}
+.lightning-effect:before {
+    content: "";
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    bottom: 0;
+    z-index: 9;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(rgba(255, 255, 255, 0.2)),
+            color-stop(50%, #fff),
+            to(rgba(255, 255, 255, 0.2))
+    );
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.2) 0%,
+            #fff 50%,
+            rgba(255, 255, 255, 0.2) 100%
+    );
+}
+/*Hover*/
+.lightning-effect:hover:before {
+    -webkit-animation: lightning-effect 1s infinite ease-in-out;
+    animation: lightning-effect 1s infinite ease-in-out;
+}
+/*Keyframes*/
+@-webkit-keyframes lightning-effect {
+    0% {
+        left: -50px;
+        background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(rgba(255, 255, 255, 0.2)),
+                color-stop(50%, #afa),
+                to(rgba(255, 255, 255, 0.2))
+        );
+        background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0.2) 0%,
+                #fff 50%,
+                rgba(255, 255, 255, 0.2) 100%
+        );
+    }
+    50% {
+        left: 100%;
+    }
+    to {
+        left: -50px;
+        background: 0 0;
+    }
+}
+@keyframes lightning-effect {
+    0% {
+        left: -50px;
+        background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(rgba(255, 255, 255, 0.2)),
+                color-stop(50%, #afa),
+                to(rgba(255, 255, 255, 0.2))
+        );
+        background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0.2) 0%,
+                #fff 50%,
+                rgba(255, 255, 255, 0.2) 100%
+        );
+    }
+    50% {
+        left: 100%;
+    }
+    to {
+        left: -50px;
+        background: 0 0;
+    }
+}
+/*ends lightning effect css*/

@@ -1,0 +1,27 @@
+.podcasts-table td{
+    padding: 5px;
+}
+.row0 {
+    text-align: center;
+}
+.source-name{
+    display: block;
+    height: 50px
+}
+.source-icon{
+    display: inline-block;
+    margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    .podcasts-table td{
+        padding: 2px;
+        font-size: 0.9em;
+    }
+    .podcasts-table tr td:first-child{
+        max-width: 165px;
+    }
+    .source-name{
+        display: none;
+    }
+}

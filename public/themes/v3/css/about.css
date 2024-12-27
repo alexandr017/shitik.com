@@ -1,0 +1,16 @@
+.about-photo {
+    width: 250px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    float: left;
+}
+
+@media screen and (max-width: 640px) {
+    .about-photo {
+        display: block;
+        margin: 0 auto 15px;
+        float: none;
+    }
+}

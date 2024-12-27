@@ -1,0 +1,16 @@
+.breadcrumb{
+    list-style-type: none;
+    padding: 0;
+    margin: 35px 0;
+}
+
+.breadcrumb > li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.breadcrumb > li > a{
+    text-decoration: none;
+    color: #974cd1;
+}
+.breadcrumb > li:after{content: '>'; margin-left: 15px}
+.breadcrumb > li:last-child:after{display: none}
