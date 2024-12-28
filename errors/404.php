@@ -8,8 +8,8 @@ $posts = getPosts();
 <?php include DOCUMENT_ROOT . '/view/v3/menu.php'; ?>
 <main class="container">
     <ul class="breadcrumb">
-        <li><a href="/">Главная</a></li>
-        <li><a href="/blog">Блог</a></li>
+        <li><a href="/ru">Главная</a></li>
+        <li><a href="/ru/blog">Блог</a></li>
         <li class="active">Ошибка 404</li>
     </ul>
     <div class="content">

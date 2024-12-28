@@ -13,7 +13,7 @@
     {
         "@context": "https://schema.org/",
         "@type": "Blog",
-        "@id": "https://shitik.com/blog/",
+        "@id": "https://shitik.com/ru/blog/",
         "mainEntityOfPage": "https://shitik.by/ru/blog",
         "name": "Блог Александра Шитика",
         "description": "Мысли в слух о программировании и не только",
