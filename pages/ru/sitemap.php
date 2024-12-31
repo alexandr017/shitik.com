@@ -38,7 +38,7 @@ include DOCUMENT_ROOT . '/view/v3/head.php';
                     <li><a href="/ru/blog/books-2023">Книжная статистика за 2023 год</a></li>
                     <li><a href="/ru/blog/run-2023">Статистика бега за 2023 год</a></li>
                     <li><a href="/ru/blog/tips-for-motorists">Неочевидные советы начинающим водителям</a></li>
-                    <li><a href="/ru/blog/fear-of-criticism">Страх перед критикой или почему люди гоняться за модой</a></li>
+                    <li><a href="/ru/blog/fear-of-criticism">Страх перед критикой или почему люди гонятся за модой</a></li>
                     <li><a href="/ru/blog/space-objects">Бытовые и медицинские предметы, которые появились благодаря изучению космоса</a></li>
                     <li><a href="/ru/blog/following-in-the-footsteps-of-hocking-and-tyson">Иду по стопам Хокинга и Тайсона</a></li>
                     <li><a href="/ru/blog/winning-lotteries">Выигрышные минские лотереи</a></li>
