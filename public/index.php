@@ -18,7 +18,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
 
 
 // Проверяем, заканчивается ли URL на слэш
-if (substr($_SERVER['PATH_INFO'], -1) === '/') {
+if (substr($_SERVER['PATH_INFO'], -1) === '/' && $_SERVER['PATH_INFO'] !== '/') {
     // Удаляем слэш из конца URL
     $newUrl = rtrim($_SERVER['PATH_INFO'], '/');
 
