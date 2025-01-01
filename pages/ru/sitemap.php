@@ -20,6 +20,7 @@ include DOCUMENT_ROOT . '/view/v3/head.php';
             <li><a href="/ru/stats">Статистика</a></li>
             <li><a href="/ru/blog">Блог</a>
                 <ul>
+                    <li><a href="/ru/blog/run-2024">Итоги бегового года 2024</a></li>
                     <li><a href="/ru/blog/when-traveling-becomes-easy">Барьеры на пути к путешествиям</a></li>
                     <li><a href="/ru/blog/books-2024">Результаты чтения книг в 2024 году</a></li>
                     <li><a href="/ru/blog/trip-to-bali">Путешествие по Бали: воспоминания и открытия</a></li>

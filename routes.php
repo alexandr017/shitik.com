@@ -69,6 +69,7 @@ $template = match ($currentRoute) {
     '/ru/blog/trip-to-bali' => 'pages/ru/blog/2024/trip-to-bali.php',
     '/ru/blog/books-2024' => 'pages/ru/blog/2024/books-2024.php',
     '/ru/blog/when-traveling-becomes-easy' => 'pages/ru/blog/2024/when-traveling-becomes-easy.php',
+    '/ru/blog/run-2024' => 'pages/ru/blog/2024/run-2024.php',
 
     '/ru/portfolio' => 'pages/ru/portfolio.php',
     '/ru/travels' => 'pages/ru/travels.php',

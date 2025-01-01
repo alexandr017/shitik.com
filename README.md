@@ -1,1 +1,1 @@
-# shitik.by
+# shitik.com
