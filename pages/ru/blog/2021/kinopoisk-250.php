@@ -83,6 +83,15 @@ $posts = getPosts();
         
 
         <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Название</th>
+                <th>Год</th>
+                <th>Страна</th>
+                <th>Режиссер</th>
+            </tr>
+            </thead>
             <tbody>
             <tr class="rating-x">
                 <td>1</td>

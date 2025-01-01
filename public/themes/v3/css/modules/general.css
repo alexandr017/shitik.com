@@ -30,13 +30,38 @@ h1{
     margin-bottom: 15px;
 }
 
-table, th, td {
-    border: 1px solid black;
+/*table, th, td {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*td {*/
+/*    padding: 3px;*/
+/*}*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-td {
-    padding: 3px;
+table th, table td {
+    padding: 1.1rem;
+    text-align: left;
 }
+
+table th {
+    background-color: #974cd1;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4faff;
+}
+
 
 #toTopButton{
     max-width: 48px;

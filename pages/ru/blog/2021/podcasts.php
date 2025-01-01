@@ -47,17 +47,19 @@ $posts = getPosts();
 
         <p>Выбор подкастов как оказалось не самое быстрое и простое занятие.  У меня уже заранее был примерный список из штук 20 подкастов. Начав анализировать несколько подкастов из списка я понял, что подавляющая проблема всех подкастов - разные площадки для прослушивания. Я вернулся к началу списка и стал вести более детальной список тех площадок, которые поддерживают все подкасты. Во время изучения наткнулся еще на несколько подкастов и в итоге получилось 3 десятка подкастов. Полный список и анализ площадок приведен в таблице ниже (слева на право: сайт, ютуб, Soundcloud, Apple Podcasts, Castbox, RSS, Google Podcasts).</p>
         <table class="podcasts-table">
+            <thead>
+                <tr class="row0">
+                    <th class="column0">Название</th>
+                    <th class="column1">Сайт<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/site.png" alt="Сайт"></th>
+                    <th class="column2">Youtube<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/yo.jpg" alt="Youtube"></th>
+                    <th class="column3">Soundcloud<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/soundcloud.png" alt="Soundcloud"></th>
+                    <th class="column4">Apple Podcasts<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/apple.png" alt="Apple Podcasts"></th>
+                    <th class="column5">Castbox<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/castbox.png" alt="Castbox"></th>
+                    <th class="column6">RSS<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/rss.png" alt="RSS"></th>
+                    <th class="column7">Google Podcasts<br><br><img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/google.png" alt="Google Podcasts"></th>
+                </tr>
+            </thead>
             <tbody>
-            <tr class="row0">
-                <td class="column0">Название</td>
-                <td class="column1"><span class="source-name">Сайт</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/site.png" alt="Сайт"></td>
-                <td class="column2"><span class="source-name">Youtube</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/yo.jpg" alt="Youtube"></td>
-                <td class="column3"><span class="source-name">Soundcloud</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/soundcloud.png" alt="Soundcloud"></td>
-                <td class="column4"><span class="source-name">Apple Podcasts</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/apple.png" alt="Apple Podcasts"></td>
-                <td class="column5"><span class="source-name">Castbox</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/castbox.png" alt="Castbox"></td>
-                <td class="column6"><span class="source-name">RSS</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/rss.png" alt="RSS"></td>
-                <td class="column7"><span class="source-name">Google Podcasts</span> <img loading="lazy" class="source-icon" src="/images/blog/2021/podcasts/google.png" alt="Google Podcasts"></td>
-            </tr>
             <tr class="row1">
                 <td class="column0">Цинковый прод</td>
                 <td class="column1"><a rel="nofollow noopener" target="_blank" href="//znprod.io"><img src="/images/blog/2021/podcasts/link-32x32.png" width="24" alt="link" loading="lazy"></a></td>

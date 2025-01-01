@@ -9,6 +9,7 @@ p, .content b, .content span {
 .content li {
     margin-bottom: 1rem;
     font-size: 1.1em;
+    line-height: 1.7rem;
 }
 
 .content .date-pub {
@@ -66,5 +67,5 @@ p, .content b, .content span {
 }
 
 .content table {
-    margin: auto;
+    margin: auto auto 15px;
 }

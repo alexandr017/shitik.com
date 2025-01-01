@@ -35,12 +35,12 @@ $posts = getPosts();
 
         <table class="movies-table">
             <thead>
-            <tr class="row0">
-                <td>#</td>
-                <td>Название</td>
-                <td>Год</td>
-                <td>Режиссер</td>
-                <td>Жанр</td>
+            <tr>
+                <th>#</th>
+                <th>Название</th>
+                <th>Год</th>
+                <th>Режиссер</th>
+                <th>Жанр</th>
             </tr>
             </thead>
             <tbody>
