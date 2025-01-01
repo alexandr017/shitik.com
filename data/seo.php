@@ -81,7 +81,7 @@ return [
         'metaDescription' => 'Узнайте о результатах бегового года: рекордное количество пробежек, суммарное расстояние в 509 км, ключевые показатели и графики. Итоги бега за 2024 год в цифрах и фактах.',
         'h1' => 'Итоги бегового года 2024',
         'url' => 'https://shitik.com/ru/blog/run-2024',
-        'preview' => 'https://shitik.com/images/blog/run-2024/run-2024.jpg',
+        'preview' => 'https://shitik.com/images/blog/2024/run-2024/run-2024.jpg',
         'date' => [
             'htmlFormat' => '2024-12-30',
             'viewFormat' => '30 декабря 2024',
