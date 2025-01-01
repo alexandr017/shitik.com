@@ -57,6 +57,7 @@ function getSeoField(string $fieldName) : string
             }
 
         }
+
         return $result;
     }
 

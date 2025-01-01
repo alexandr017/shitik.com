@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="<?php echo getSeoField('metaDescription') ?>" />
     <meta name="twitter:title" content="<?php echo getSeoField('title') ?>" />
 
-    <link rel="canonical" href="<?php echo getSeoField('canonical'); ?>" />
+    <link rel="canonical" href="<?php echo getSeoField('url') ?>">
     <link rel="icon" href="/themes/v3/images/index/logo.svg" type="image/svg+xml">
     <style><?php printCSS(); ?></style>
 </head>
