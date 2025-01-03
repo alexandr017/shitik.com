@@ -17,14 +17,11 @@ if (isset($_SERVER['REQUEST_URI'])) {
 }
 
 
-// Проверяем, заканчивается ли URL на слэш
 if (substr($_SERVER['PATH_INFO'], -1) === '/' && $_SERVER['PATH_INFO'] !== '/') {
-    // Удаляем слэш из конца URL
     $newUrl = rtrim($_SERVER['PATH_INFO'], '/');
 
-    // Устанавливаем заголовок для редиректа с кодом 301
     header("Location: $newUrl", true, 301);
-    exit(); // Завершаем выполнение скрипта
+    exit();
 }
 
 include DOCUMENT_ROOT . '/routes.php';

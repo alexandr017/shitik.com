@@ -69,7 +69,7 @@ function getPosts() : array
 {
     $postsRow = include DOCUMENT_ROOT . '/data/seo.php';
     return array_filter($postsRow, function($v, $k){
-        return str_contains($k, 'blog/');
+        return str_contains($k, 'ru/blog/');
     }, ARRAY_FILTER_USE_BOTH);
 }
 
