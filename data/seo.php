@@ -1,6 +1,13 @@
 <?php
 
 $pages = [
+    '/' => [
+        'title' => 'Personal website of web developer Alexander Andreevich Shitik',
+        'metaDescription' => 'Welcome to my personal website. Here you can find information about me, check out my work, or visit my blog.',
+        'h1' => 'Shitik Alexander Andreevich',
+        'url' => 'https://shitik.com',
+        'preview' => 'https://shitik.com/themes/v3/images/about/photo.jpg'
+    ],
     'ru' => [
         'title' => 'Персональный сайт веб-разработчика Александра Андреевича Шитика',
         'metaDescription' => 'Добро пожаловать на мой персональный сайт посвященный разработке сайтов и веб-приложений. Здесь вы можете узнать информацию обо мне, ознакомится с моими работами или посетить мой блог о программировании.',

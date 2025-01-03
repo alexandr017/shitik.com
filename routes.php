@@ -10,7 +10,7 @@ if (! in_array($currentRoute, ['/ru/library?show_type=short-list', '/ru/library?
 }
 
 $baseRoutes = [
-    '/' => 'pages/ru/index.php',
+    '/' => 'pages/select-lang.php',
 ];
 $routesRuBlog = include DOCUMENT_ROOT . '/routes/ru/blog.php';
 $routesRuOther = include DOCUMENT_ROOT . '/routes/ru/other.php';
