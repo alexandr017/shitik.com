@@ -6,6 +6,15 @@ p, .content b, .content span {
     padding-left: 20px;
 }
 
+.content ul.small-line-height li, .content ol.small-line-height li{
+    /*line-height: 1.2rem;*/
+    margin-bottom: 5px;
+}
+
+.content p + ol, .content p + ul {
+    margin-top: -1rem;
+}
+
 .content li {
     margin-bottom: 1rem;
     font-size: 1.1em;
