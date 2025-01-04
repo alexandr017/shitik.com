@@ -89,7 +89,8 @@ $posts_2021 = include DOCUMENT_ROOT . '/data/ru/2021.php';
 $posts_2022 = include DOCUMENT_ROOT . '/data/ru/2022.php';
 $posts_2023 = include DOCUMENT_ROOT . '/data/ru/2023.php';
 $posts_2024 = include DOCUMENT_ROOT . '/data/ru/2024.php';
-$posts = array_merge($posts_2024, $posts_2023, $posts_2022, $posts_2021, $posts_2020, $posts_2019);
+$posts_2025 = include DOCUMENT_ROOT . '/data/ru/2025.php';
+$posts = array_merge($posts_2025, $posts_2024, $posts_2023, $posts_2022, $posts_2021, $posts_2020, $posts_2019);
 foreach ($posts as $key => $page) {
     $pages[$key] = $page;
 }

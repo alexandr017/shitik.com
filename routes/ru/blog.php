@@ -60,4 +60,5 @@ return [
     '/ru/blog/when-traveling-becomes-easy' => 'pages/ru/blog/2024/when-traveling-becomes-easy.php',
     '/ru/blog/run-2024' => 'pages/ru/blog/2024/run-2024.php',
     '/ru/blog/total-2024' => 'pages/ru/blog/2024/total-2024.php',
+    '/ru/blog/my-first-book' => 'pages/ru/blog/2025/my-first-book.php',
 ];
