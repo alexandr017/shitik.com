@@ -3,7 +3,7 @@
     <span class="mob-menu-label">Меню</span>
     <div class="container">
         <ul class="menu-ul">
-            <li class="menu-li link-to-home"><a href="/ru" class="menu-a"><span class="first-word">Shitik</span>.by</a></li>
+            <li class="menu-li link-to-home"><a href="/ru" class="menu-a"><span class="first-word">Shitik</span>.com</a></li>
             <?php if($url == 'alexandr-andreevich') : ?>
                 <li class="menu-li active"><span class="icon icon-man"></span>О себе</li>
             <?php else : ?>
