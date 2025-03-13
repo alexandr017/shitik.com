@@ -12,7 +12,7 @@
 .rating-2{background: #ef7985 !important;}
 .rating-x{background: #d8d8d8 !important;}
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     /*.movies-table td{*/
     /*    padding: 2px;*/
     /*    font-size: 0.9em;*/

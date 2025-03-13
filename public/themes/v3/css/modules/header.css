@@ -1,8 +1,5 @@
-
-
-.container{width: 800px;margin: auto;max-width: 100%;}
 .menu{
-    background: #974cd1;
+    background: #8338ec;
 }
 .menu-ul{
     list-style-type: none;
@@ -62,19 +59,14 @@
 }
 nav ul.show{
     position: absolute;
-    background: #974cd1;
+    background: #8338ec;
     width: 100%;
     z-index: 1;
     left: 0;
 }
 
 
-@media screen and (max-width: 992px) {
-    .container{width: 600px;}
-}
-
-
-@media screen and (max-width: 786px){
+@media screen and (max-width: 768px){
     .mob-menu-label{
         display: block;
         text-align: right;
@@ -83,10 +75,6 @@ nav ul.show{
         cursor: pointer;
     }
 
-    .container {
-        width: calc(100% - 30px);
-        margin: 0 15px;
-    }
     .menu-ul{
         display: none;
     }
@@ -95,46 +83,4 @@ nav ul.show{
         text-align: center;
         line-height: 2em;
     }
-}
-
-.telegram-vote {
-    display: none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    left: 15px;
-    width: 800px;
-    max-width: calc(100% - 50px);
-    margin: auto;
-    z-index: 1000;
-    background: #eae6e6;
-    padding: 10px;
-    border-radius: 16px;
-}
-
-.telegram-vote p {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-#yesVote {
-    background: #009688;
-    color: #fff;
-    margin-right: 10px;
-    border: 0;
-    outline: 0;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#noVote {
-    background: #E91E63;
-    color: #fff;
-    margin-right: 10px;
-    border: 0;
-    outline: 0;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
 }

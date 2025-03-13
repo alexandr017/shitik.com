@@ -1,0 +1,142 @@
+footer {
+    margin: 45px 0 0;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 1px solid #dadada;
+
+}
+
+footer a {
+    display: inline-block;
+}
+
+footer p, footer a, footer .copyright {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 5px;
+}
+
+footer .links-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+.modal-links {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    width: 800px;
+    max-width: calc(100% - 50px);
+    margin: auto;
+    z-index: 1000;
+    background: #f8f8f8;
+    background: linear-gradient( #f8f8f8, #fff );
+    padding: 10px;
+    /*border-radius: 16px;*/
+    /*border: 1px solid #dadada;*/
+    /*box-shadow:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    text-align: center;
+}
+
+.modal-links p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.modal-links .icons-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    footer .links-wrap {
+        justify-content: center;
+    }
+
+    footer .copyright-wrap {
+        order: 11;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*body {*/
+/*    margin: 0;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    align-items: flex-end;*/
+/*    justify-content: center;*/
+/*    background-color: #222;*/
+/*}*/
+
+/* Эмодзи */
+.emoji {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    animation: vibrate 0.1s infinite alternate ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+/* Анимация вибрации */
+@keyframes vibrate {
+    0% { transform: translate(-50%, -50%) rotate(-5deg); }
+    100% { transform: translate(-50%, -50%) rotate(5deg); }
+}
+
+/* Модальное окно */
+.modal-links {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #8338ec, #68239f, #b385e0);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    transition: width 0.3s ease-out, transform 0.2s ease-in 0.3s;
+    opacity: 0;
+}
+
+.modal-links.active {
+    width: 80vw;
+    transform: translate(-50%, -50%) scaleY(100);
+    opacity: 1;
+}

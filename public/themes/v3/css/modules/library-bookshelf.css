@@ -98,11 +98,11 @@
 
 .book:hover{
     cursor: pointer;
-    background: #974cd1 !important;
+    background: #8338ec !important;
 }
 
 
-@media screen and (max-width: 786px){
+@media screen and (max-width: 768px){
     .bookshelf {
         width: 310px;
     }

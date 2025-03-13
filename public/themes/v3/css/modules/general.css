@@ -1,11 +1,23 @@
+:root {
+    --main-text-color: #292929;
+    --main-color: #8338ec;
+    --second-color: #3a86ff;
+    /*#ff006e;*/
+    /*#fb5607;*/
+    /*#ffbe0b;*/
+}
+
 html {
     scroll-behavior: smooth;
 }
-*{padding: 0;margin: 0;}
-body{padding-bottom: 50px}
+* {padding: 0;margin: 0;}
 div, p, h1, h2, .h2, h3, h4, h5, h6, span, small, li, a, b,i,strong, li, table {
     font-family: 'Arsenal', sans-serif;
     color: #292929;
+}
+
+a {
+    color: #3a86ff;
 }
 
 h1{
@@ -26,17 +38,9 @@ p{
     line-height: 1.7rem;
 }
 
-h1{
+h1 {
     margin-bottom: 15px;
 }
-
-/*table, th, td {*/
-/*    border: 1px solid black;*/
-/*}*/
-
-/*td {*/
-/*    padding: 3px;*/
-/*}*/
 
 table {
     width: 100%;
@@ -53,7 +57,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #974cd1;
+    background-color: #8338ec;
     color: #fff;
     font-weight: 600;
 }
@@ -72,23 +76,33 @@ table tr:nth-child(even) {
     transition: transform 0.3s ease-out;
     opacity: 0.6;
     display: none;
+    z-index: 1;
 }
 
 #toTopButton:hover {
     opacity: 1;
 }
 
-
-footer{
-    margin: 45px 0 15px;
-    text-align: center;
+@media screen and (max-width: 992px) {
+    #toTopButton {
+        max-width: 38px;
+        bottom: 75px;
+    }
 }
 
-footer a{
-    color: #807d82;
-    margin: 0 5px;
+.container{width: 1023px; margin: auto; max-width: 100%;}
+.container-2 {width: 800px; margin: auto; max-width: 100%;}
+
+.content-wrap {
+    display: flex;
+    gap: 12px;
 }
 
+@media screen and (max-width: 992px) {
+    .container{width: calc(100% - 30px);}
+    .container-2 {width: calc(100% - 30px);}
 
-
-
+    .content-wrap {
+        display: block;
+    }
+}

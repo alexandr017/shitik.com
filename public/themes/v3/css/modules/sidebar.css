@@ -1,0 +1,118 @@
+aside {
+    max-width: 250px;
+    flex-shrink: 0;
+    text-align: center;
+
+}
+
+aside .module {
+    padding: 10px;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+}
+aside .module + .module {
+    margin-top: 16px;
+}
+
+aside #socialMedia {
+    position: sticky;
+    top: 15px;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+aside .module .title {
+    color: #FFF;
+    background: #8338ec;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: -10px -10px 10px -10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 5px;
+}
+
+aside .module .links-wrap {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+aside .module .links-wrap a:hover {
+    transform: scale(1.1);
+}
+
+aside .module p {
+    margin-bottom: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.3;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Немного увеличиваем размер */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 992px) {
+
+    aside {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    aside .module {
+        width: calc(100% - 30px);
+    }
+
+    aside #socialMedia {
+        position: relative;
+    }
+
+    aside#mobileSocialMedia {
+        position: fixed;
+        bottom: 25px;
+        left: 25px;
+        width: calc(100% - 30px);
+    }
+
+    aside#mobileSocialMedia .module {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    aside#mobileSocialMedia .module .title {
+        display: none;
+    }
+
+    aside#mobileSocialMedia .module a {
+        display: inline-block;
+        min-width: 32px;
+        min-height: 32px;
+    }
+
+    aside#mobileSocialMedia .module img {
+        width: 32px;
+        height: 32px;
+    }
+
+    aside#mobileSocialMedia .module p {
+        line-height: 1.1;
+    }
+
+    /*aside#mobileSocialMedia .title {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*aside#mobileSocialMedia p:*/
+}

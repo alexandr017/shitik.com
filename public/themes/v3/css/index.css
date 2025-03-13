@@ -22,17 +22,24 @@ body{background: url('/themes/v3/images/index/background.jpg') no-repeat fixed c
     background: #fff;
     margin: 1px;
     border-radius: 10px;
-    border: solid 3px #974cd1;
+    border: solid 3px #8338ec;
     font-family: 'Open Sans Condensed', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #974cd1;
+    color: #8338ec;
     text-decoration: none;
+    text-align: center;
 }
 
-.purple{background: #974cd1; color: #fff; border-color: #974cd1}
+.purple{background: #8338ec; color: #fff; border-color: #8338ec}
+.purple h1 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
 .disable{background: #fff;  border-color: #d9d9d9; cursor: default !important; color: #bbb}
 
 
@@ -43,9 +50,15 @@ body{background: url('/themes/v3/images/index/background.jpg') no-repeat fixed c
     cursor: pointer;
 }
 
+.icon-big {
+    width: 64px;
+    height: 64px;
+}
+
 .icon {
     width: 32px;
     height: 32px;
+    margin-bottom: 5px;
 }
 
 .icon-man{background: url("/themes/v3/images/index/man.svg"); background-size: contain}
@@ -56,7 +69,8 @@ body{background: url('/themes/v3/images/index/background.jpg') no-repeat fixed c
 .icon-library{background: url("/themes/v3/images/index/books.svg"); background-size: contain}
 .icon-stats{background: url("/themes/v3/images/index/bar-chart.svg"); background-size: contain}
 .icon-web{background: url("/themes/v3/images/index/web.svg"); background-size: contain}
-.icon-site{background: url("/themes/v3/images/index/logo.svg"); background-size: contain}
+.icon-site{background: url("/themes/v3/images/index/logo-white.png"); background-size: contain}
+.icon-lock{background: url("/themes/v3/images/index/lock-2.svg"); background-size: contain}
 
 
 

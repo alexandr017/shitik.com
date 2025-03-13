@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .post-item {
         display: block;
         border-bottom: 1px solid #e1dcdc;

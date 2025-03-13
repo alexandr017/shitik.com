@@ -1,0 +1,39 @@
+<?php
+
+return [
+    'en/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'ru/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'de/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'fr/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'es/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'pt/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'zh/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+    'hi/sitemap-xml' => [\app\Controllers\SitemapXMLController::class, 'index'],
+
+    'en/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'ru/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'de/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'fr/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'es/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'pt/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'zh/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+    'hi/sitemap-static-pages-xml' => [\app\Controllers\SitemapXMLController::class, 'staticPages'],
+
+    'en/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'ru/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'de/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'fr/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'es/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'pt/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'zh/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+    'hi/sitemap-blog-xml' => [\app\Controllers\SitemapXMLController::class, 'blogPosts'],
+
+    'en/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'ru/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'de/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'fr/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'es/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'pt/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'zh/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+    'hi/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+];

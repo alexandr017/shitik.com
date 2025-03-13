@@ -21,12 +21,27 @@ p, .content b, .content span {
     line-height: 1.7rem;
 }
 
-.content .date-pub {
+.date-pub {
     color: #a9a9a9;
     font-size: 0.9rem;
     line-height: 1rem;
-    display: block;
-    margin: 15px 0;
+    display: inline-block;
+    margin: 10px 5px 15px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.unique {
+    background: #ff006e;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.unique:before {
+    content: attr(data-text);
 }
 
 .content h2, .content .h2 {
@@ -40,8 +55,9 @@ p, .content b, .content span {
     padding: 5px 45px;
     margin: 0 0 15px;
     text-align: center;
-    background: #f9f9f9;
+    background: #ffbe0b;
     font-style: italic;
+    border-radius: 12px;
 }
 
 .blockquote span{
@@ -56,6 +72,7 @@ p, .content b, .content span {
 .blockquote:after {
     content: '”';
     right: 10px;
+    bottom: -10px;
 }
 
 .blockquote:before, .blockquote:after {
@@ -78,3 +95,5 @@ p, .content b, .content span {
 .content table {
     margin: auto auto 15px;
 }
+
+

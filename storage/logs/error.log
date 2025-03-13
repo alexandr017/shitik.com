@@ -1,0 +1,202 @@
+[2025-03-11 11:58:07] Class "app\Controllers\Dynamics\StaticPagesController" not found in /Users/admin/projects/home/shitik.com/routes/routes.php on line 37
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/public/index.php(60): include()
+#1 {main}
+
+[2025-03-11 12:02:16] Class "app\Controllers\Dynamics\StaticPagesController" not found in /Users/admin/projects/home/shitik.com/routes/routes.php on line 37
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/public/index.php(60): include()
+#1 {main}
+
+[2025-03-11 12:05:22] Call to undefined function getEnvValue() in /Users/admin/projects/home/shitik.com/public/index.php on line 12
+Stack trace:
+#0 {main}
+
+[2025-03-11 12:05:22] Uncaught Error: Call to undefined function App\Errors\renderView() in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:59
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(29): App\Errors\ErrorHandler::renderErrorPage(500)
+#1 [internal function]: App\Errors\ErrorHandler::handleException(Object(Error))
+#2 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 59
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-11 12:06:06] Call to undefined function getEnvValue() in /Users/admin/projects/home/shitik.com/public/index.php on line 12
+Stack trace:
+#0 {main}
+
+[2025-03-11 12:06:06] Uncaught Error: Call to undefined function App\Errors\dd() in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:59
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(29): App\Errors\ErrorHandler::renderErrorPage(500)
+#1 [internal function]: App\Errors\ErrorHandler::handleException(Object(Error))
+#2 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 59
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-11 12:06:20] Call to undefined function getEnvValue() in /Users/admin/projects/home/shitik.com/public/index.php on line 12
+Stack trace:
+#0 {main}
+
+[2025-03-11 12:06:20] Uncaught Error: Call to undefined function App\Errors\renderView() in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:60
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(29): App\Errors\ErrorHandler::renderErrorPage(500)
+#1 [internal function]: App\Errors\ErrorHandler::handleException(Object(Error))
+#2 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 60
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-11 12:07:12] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:07:22] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:07:42] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:10:25] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:10:57] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:11:08] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:11:20] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:11:33] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:12:00] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:19:04] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:20:20] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:20:43] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:21:06] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:21:15] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:21:25] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:24:41] Undefined constant "g" in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/static-pages/simple-page.php on line 17
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include()
+#1 /Users/admin/projects/home/shitik.com/App/Controllers/Dynamics/StaticPagesController.php(22): renderView('v3/templates/st...', Array)
+#2 /Users/admin/projects/home/shitik.com/routes/routes.php(43): app\Controllers\Dynamics\StaticPagesController->render(11)
+#3 /Users/admin/projects/home/shitik.com/public/index.php(68): include('/Users/admin/pr...')
+#4 {main}
+
+[2025-03-11 12:29:52] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/views/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(Error))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-11 12:30:11] Uncaught ErrorException: Undefined variable $message in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/errors/500.php:16
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/resources/view/v3/templates/errors/500.php(16): App\Errors\ErrorHandler::handleError(2, 'Undefined varia...', '/Users/admin/pr...', 16)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include('/Users/admin/pr...')
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(Error))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/resources/view/v3/templates/errors/500.php on line 16
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+

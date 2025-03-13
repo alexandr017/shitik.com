@@ -7,7 +7,7 @@
     float: left;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .about-photo {
         display: block;
         margin: 0 auto 15px;

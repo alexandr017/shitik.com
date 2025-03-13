@@ -11,7 +11,16 @@
     margin: auto;
 }
 
-@media screen and (max-width: 640px) {
+table .link {
+    width: 24px;
+    height: 24px;
+    background: url('/images/blog/2021/podcasts/link-32x32.png') no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
     .podcasts-table td{
         padding: 2px;
         font-size: 0.9em;
