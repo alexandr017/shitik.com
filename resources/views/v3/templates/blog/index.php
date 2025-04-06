@@ -1,6 +1,28 @@
 <?php
 includeCSS(['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/blog-index', 'modules/sidebar', 'modules/footer']);
-echo renderView('v3/modules/head.php', ['title' => $page['title'], 'metaDescription' => $page['meta_description']]);
+
+$title = $page['title'];
+$metaDescription = $page['meta_description'];
+
+$clearedLink = str_replace('/' . getLocale() . '/', '', $_SERVER['REQUEST_URI']);
+$alternates = [
+    (object) ['lang' => 'en', 'url' => 'en/' . $clearedLink],
+    (object) ['lang' => 'ru', 'url' => 'ru/' . $clearedLink],
+    (object) ['lang' => 'es', 'url' => 'es/' . $clearedLink],
+    (object) ['lang' => 'pt', 'url' => 'pt/' . $clearedLink],
+    (object) ['lang' => 'fr', 'url' => 'fr/' . $clearedLink],
+    (object) ['lang' => 'de', 'url' => 'de/' . $clearedLink],
+    (object) ['lang' => 'zh', 'url' => 'zh/' . $clearedLink],
+    (object) ['lang' => 'hi', 'url' => 'hi/' . $clearedLink],
+];
+
+foreach ($alternates as $key => $alternate) {
+    if ('/' . $alternate->url ==  $_SERVER['REQUEST_URI']) {
+        unset($alternates[$key]);
+    }
+}
+
+echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'alternates'));
 ?>
 <body>
 <?php echo renderView('v3/modules/menu.php'); ?>

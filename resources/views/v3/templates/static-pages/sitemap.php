@@ -1,6 +1,26 @@
 <?php
 includeCSS(['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/content', 'modules/footer']);
-echo renderView('v3/modules/head.php', ['title' => $page['title'], 'metaDescription' => $page['meta_description']]);
+
+$alternates = [
+    (object) ['lang' => 'en', 'url' => 'en/sitemap'],
+    (object) ['lang' => 'ru', 'url' => 'ru/sitemap'],
+    (object) ['lang' => 'es', 'url' => 'es/sitemap'],
+    (object) ['lang' => 'pt', 'url' => 'pt/sitemap'],
+    (object) ['lang' => 'fr', 'url' => 'fr/sitemap'],
+    (object) ['lang' => 'de', 'url' => 'de/sitemap'],
+    (object) ['lang' => 'zh', 'url' => 'zh/sitemap'],
+    (object) ['lang' => 'hi', 'url' => 'hi/sitemap'],
+];
+
+foreach ($alternates as $key => $alternate) {
+    if ($alternate->url ==  getLocale() . '/sitemap') {
+        unset($alternates[$key]);
+    }
+}
+$title = $page['title'];
+$metaDescription = $page['meta_description'];
+
+echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'alternates'));
 ?>
 <body>
 <?php echo renderView('v3/modules/menu.php'); ?>

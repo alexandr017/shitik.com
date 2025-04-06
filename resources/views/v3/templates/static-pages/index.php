@@ -1,75 +1,27 @@
 <?php
-
 $title = $page['title'];
 $metaDescription = $page['meta_description'];
 
 includeCSS(['modules/general', 'modules/fonts', 'index']);
 
-echo renderView('v3/modules/head.php', compact('title', 'metaDescription'));
-$currentLang = getLocale();
+$alternates = [
+    (object) ['lang' => 'en', 'url' => 'en'],
+    (object) ['lang' => 'ru', 'url' => 'ru'],
+    (object) ['lang' => 'es', 'url' => 'es'],
+    (object) ['lang' => 'pt', 'url' => 'pt'],
+    (object) ['lang' => 'fr', 'url' => 'fr'],
+    (object) ['lang' => 'de', 'url' => 'de'],
+    (object) ['lang' => 'zh', 'url' => 'zh'],
+    (object) ['lang' => 'hi', 'url' => 'hi'],
+];
+foreach ($alternates as $key => $alternate) {
+    if ($alternate->lang == getLocale()) {
+        unset($alternates[$key]);
+    }
+}
 
-//$about = [
-//    'about' => [
-//        'ru' => 'О себе',
-//        'en' => 'About Me',
-//        'de' => 'Über mich',
-//        'fr' => 'À propos de moi',
-//        'es' => 'Sobre mi',
-//        'pt' => 'Sobre mim',
-//        'zh' => '关于我',
-//        'hi' => 'मेरे बारे में'
-//    ],
-//    'blog' => [
-//        'ru' => 'Блог',
-//        'en' => 'Blog',
-//        'de' => 'Blog',
-//        'fr' => 'Blog',
-//        'es' => 'Blog',
-//        'pt' => 'Blog',
-//        'zh' => '博客',
-//        'hi' => 'ब्लॉग'
-//    ],
-//    'travels' => [
-//        'ru' => 'Путешествия',
-//        'en' => 'Travels',
-//        'de' => 'Reisen',
-//        'fr' => 'Voyages',
-//        'es' => 'Viajes',
-//        'pt' => 'Viagens',
-//        'zh' => '旅行',
-//        'hi' => 'यात्राएँ'
-//    ],
-//    'library' => [
-//        'ru' => 'Библиотека',
-//        'en' => 'Library',
-//        'de' => 'Bibliothek',
-//        'fr' => 'Bibliothèque',
-//        'es' => 'Biblioteca',
-//        'pt' => 'Biblioteca',
-//        'zh' => '图书馆',
-//        'hi' => 'पुस्तकालय'
-//    ],
-//    'stats' => [
-//        'ru' => 'Статистика',
-//        'en' => 'Statistics',
-//        'de' => 'Statistik',
-//        'fr' => 'Statistiques',
-//        'es' => 'Estadísticas',
-//        'pt' => 'Estatísticas',
-//        'zh' => '统计',
-//        'hi' => 'सांख्यिकी'
-//    ],
-//    'soon-new-section' => [
-//        'ru' => 'Скоро новый раздел',
-//        'en' => 'A new section is coming soon',
-//        'de' => 'Bald kommt ein neuer Abschnitt',
-//        'fr' => 'Une nouvelle section arrive bientôt',
-//        'es' => 'Pronto habrá una nueva sección',
-//        'pt' => 'Em breve, uma nova seção',
-//        'zh' => '即将推出新栏目',
-//        'hi' => 'जल्द ही एक नया अनुभाग आएगा'
-//    ]
-//];
+echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'alternates'));
+$currentLang = getLocale();
 ?>
 <body>
 <div class="modules-wrap">
