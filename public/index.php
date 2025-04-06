@@ -47,7 +47,7 @@ try {
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ]);
 } catch (PDOException $e) {
-    \App\Core\ErrorHandler::handleException($e);
+    \App\Errors\ErrorHandler::handleException($e);
 }
 
 // Определение маршрута

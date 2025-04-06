@@ -1,4 +1,4 @@
-<?php $url = preg_replace('/^\//', '', $_SERVER['PATH_INFO']); ?>
+<?php $url = preg_replace('/^\//', '', $_SERVER['REQUEST_URI']); ?>
 <nav class="menu">
     <span class="mob-menu-label"><?php echo lang('menu.menu') ?></span>
     <div class="container">

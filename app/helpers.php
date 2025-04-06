@@ -56,9 +56,7 @@ function deletedPages() : array
 function getLocale($url = null) : ?string
 {
     if ($url === null) {
-        if (isset($_SERVER['PATH_INFO'])) {
-            $url = $_SERVER['REQUEST_URI'];
-        }
+        $url = $_SERVER['PATH_INFO'] ?? $_SERVER['REQUEST_URI'];
     }
 
     $parsedUrl = parse_url($url);
