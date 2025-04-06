@@ -1,6 +1,10 @@
 <?php
 $currentRoute = $_SERVER['REQUEST_URI'];
 
+if (str_contains($currentRoute, "?")) {
+    $currentRoute = strstr($currentRoute, "?", true);
+}
+
 if ($currentRoute != '/') {
     $currentRoute = htmlspecialchars(preg_replace('/^\//', '', $currentRoute), ENT_QUOTES, 'UTF-8');
 }
