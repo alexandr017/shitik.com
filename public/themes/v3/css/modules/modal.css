@@ -20,11 +20,9 @@
 /* Стили для модальных окон */
 
 .modal {
-
     /* Скрываем окна  */
     opacity: 0;
     visibility: hidden;
-
 
     /*  Установаем ширину окна  */
     width: 100%;
@@ -40,7 +38,7 @@
     /*  Побочные стили   */
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
     text-align: center;
-    padding: 30px;
+    padding: 15px;
     border-radius: 3px;
     background-color: #fff;
     transition: 0.3s all;
@@ -62,13 +60,22 @@
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     fill: #444;
     cursor: pointer;
 }
 
 .modal__body {
     text-align: left;
-    padding: 45px 15px;
+    padding: 15px;
+}
+
+@media (max-width: 576px) {
+    .modal {
+        max-width: 90%;
+    }
+    .modal__body {
+        padding: 5px;
+    }
 }

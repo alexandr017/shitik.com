@@ -200,3 +200,83 @@ Stack trace:
 #0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
 #1 {main}
 
+[2025-03-29 11:09:48] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/view/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-29 11:40:32] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/view/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-30 10:34:00] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/view/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-30 21:36:53] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/view/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-30 21:36:55] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/view/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-30 21:36:55] Uncaught ErrorException: include(/Users/admin/projects/home/shitik.com/public/..//resources/view/v3/templates/errors/500.php): Failed to open stream: No such file or directory in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:35
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): App\Errors\ErrorHandler::handleError(2, 'include(/Users/...', '/Users/admin/pr...', 35)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include()
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 35
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-03-30 21:38:06] Uncaught ErrorException: Undefined global variable $_SESSION in /Users/admin/projects/home/shitik.com/app/helpers.php:56
+Stack trace:
+#0 /Users/admin/projects/home/shitik.com/app/helpers.php(56): App\Errors\ErrorHandler::handleError(2, 'Undefined globa...', '/Users/admin/pr...', 56)
+#1 /Users/admin/projects/home/shitik.com/resources/views/v3/modules/head.php(2): getLocale()
+#2 /Users/admin/projects/home/shitik.com/app/helpers.php(10): include('/Users/admin/pr...')
+#3 /Users/admin/projects/home/shitik.com/resources/views/v3/templates/errors/500.php(4): renderView('v3/modules/head...')
+#4 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(35): include('/Users/admin/pr...')
+#5 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#6 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/helpers.php on line 56
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+

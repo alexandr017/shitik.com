@@ -2,6 +2,10 @@
 
 namespace app\Controllers\Dynamics;
 
+use App\Repositories\BlogRepository;
+use App\Repositories\LibraryRepository;
+use App\Repositories\StaticPagesRepository;
+
 final class StaticPagesController implements DynamicsInterface
 {
 
@@ -37,35 +41,31 @@ final class StaticPagesController implements DynamicsInterface
 
     final public function libraryIndexPage($page)
     {
-        $currentLang = getLocale();
-//        global $PDO;
-//        $sql = "SELECT * FROM book_reviews where status = 1 and lang = '$currentLang' ORDER BY created_at DESC";
-//        $stmt = $PDO->prepare($sql);
-//        $stmt->execute();
-//        $books = $stmt->fetchAll();
-        $books = [];
-        return renderView('v3/templates/static-pages/library.php', compact('page', 'books'));
+        $books = (new LibraryRepository)->getAllEnableBooks(getLocale(), 'DESC');
+        return renderView('v3/templates/library/index.php', compact('page', 'books'));
     }
 
     final public function sitemapIndexPage($page)
     {
         $items = [];
-        global $PDO;
         $currentLang = getLocale();
-        $sql = "SELECT id, h1, template, alias as url FROM static_pages where status = 1 and lang = '$currentLang';";
-        $stmt = $PDO->prepare($sql);
-        $stmt->execute();
-        $pages = $stmt->fetchAll();
+        $pages = (new StaticPagesRepository)->getAllEnablePages($currentLang);
 
         foreach ($pages as $_page) {
             if ($_page["template"] == 'blog-index') {
                 $children = [];
-                $sql2 = "SELECT id, h1, alias as url FROM blog_posts where status = 1 and lang = '$currentLang';";
-                $stmt2 = $PDO->prepare($sql2);
-                $stmt2->execute();
-                $posts = $stmt2->fetchAll();
+                $posts = (new BlogRepository())->getAllEnablePosts($currentLang);
                 foreach ($posts as $post) {
                     $children[] = (object) $post;
+                }
+
+                $_page['children'] = $children;
+            }
+            if ($_page["template"] == 'library-index') {
+                $children = [];
+                $books = (new LibraryRepository)->getAllEnableBookForSitemap($currentLang);
+                foreach ($books as $book) {
+                    $children[] = (object)$book;
                 }
 
                 $_page['children'] = $children;

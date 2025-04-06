@@ -32,7 +32,7 @@ class ErrorHandler
         }
 
         // Подключаем шаблон ошибки 500
-        include DOCUMENT_ROOT . '/resources/view/v3/templates/errors/500.php';
+        include DOCUMENT_ROOT . '/resources/views/v3/templates/errors/500.php';
 
         // Полностью останавливаем выполнение скрипта
         exit();

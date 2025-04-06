@@ -61,16 +61,16 @@ body{background: url('/themes/v3/images/index/background.jpg') no-repeat fixed c
     margin-bottom: 5px;
 }
 
-.icon-man{background: url("/themes/v3/images/index/man.svg"); background-size: contain}
-.icon-blog{background: url("/themes/v3/images/index/blog.svg"); background-size: contain}
-.icon-portfolio{background: url("/themes/v3/images/index/promotion.svg"); background-size: contain}
-.icon-travel{background: url("/themes/v3/images/index/around.svg"); background-size: contain}
-.icon-projects{background: url("/themes/v3/images/index/project-management.svg"); background-size: contain}
-.icon-library{background: url("/themes/v3/images/index/books.svg"); background-size: contain}
-.icon-stats{background: url("/themes/v3/images/index/bar-chart.svg"); background-size: contain}
-.icon-web{background: url("/themes/v3/images/index/web.svg"); background-size: contain}
-.icon-site{background: url("/themes/v3/images/index/logo-white.png"); background-size: contain}
-.icon-lock{background: url("/themes/v3/images/index/lock-2.svg"); background-size: contain}
+.icon-man{background: url("/themes/v3/images/index/man.svg") no-repeat center; background-size: contain}
+.icon-blog{background: url("/themes/v3/images/index/blog.svg") no-repeat center; background-size: contain}
+.icon-portfolio{background: url("/themes/v3/images/index/promotion.svg") no-repeat center; background-size: contain}
+.icon-travel{background: url("/themes/v3/images/index/around.svg") no-repeat center; background-size: contain}
+.icon-projects{background: url("/themes/v3/images/index/project-management.svg") no-repeat center; background-size: contain}
+.icon-library{background: url("/themes/v3/images/index/books.svg") no-repeat center; background-size: contain}
+.icon-stats{background: url("/themes/v3/images/index/bar-chart.svg") no-repeat center; background-size: contain}
+.icon-web{background: url("/themes/v3/images/index/web.svg") no-repeat center; background-size: contain}
+.icon-site{background: url("/themes/v3/images/index/logo-white.png") no-repeat center; background-size: contain}
+.icon-lock{background: url("/themes/v3/images/index/lock-2.svg") no-repeat center; background-size: contain}
 
 
 

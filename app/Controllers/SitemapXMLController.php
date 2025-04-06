@@ -20,9 +20,9 @@ final class SitemapXMLController
         echo '  <sitemap>' . "\n";
         echo '    <loc>' . getEnvValue('DOMAIN_NAME') . '/' . $lang . '/sitemap-blog-xml</loc>' . "\n";
         echo '  </sitemap>' . "\n";
-//        echo '  <sitemap>' . "\n";
-//        echo '    <loc>' . getEnvValue('DOMAIN_NAME') . '/' . $lang . '/sitemap-library-xml</loc>' . "\n";
-//        echo '  </sitemap>' . "\n";
+        echo '  <sitemap>' . "\n";
+        echo '    <loc>' . getEnvValue('DOMAIN_NAME') . '/' . $lang . '/sitemap-library-xml</loc>' . "\n";
+        echo '  </sitemap>' . "\n";
         echo '</sitemapindex>';
     }
 
@@ -69,7 +69,7 @@ final class SitemapXMLController
     final public function library() : void
     {
         header('Content-Type: application/xml');
-        $books = (new LibraryRepository)->getAllEnablePages(getLocale());
+        $books = (new LibraryRepository)->getAllEnableBookForSitemap(getLocale());
 
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
         $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";

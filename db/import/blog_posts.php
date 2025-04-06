@@ -2,6 +2,7 @@
 $PDO->exec("DELETE FROM blog_posts;");
 $PDO->exec("ALTER TABLE blog_posts AUTO_INCREMENT = 1;");
 
+$pagesTypes = include __DIR__ . '/../../config/page-types.php';
 
 $id = '1oY1qub8eJ8o21s3UV2D4bScCSWzkENk1j9KDpEuVfQ8';
 $gid = '0';
@@ -19,10 +20,10 @@ try {
     // Подготовка SQL запроса
     $sql = "
         INSERT INTO blog_posts (
-            lang, alias, title, meta_description, h1, preview, h1_on_blog_page, 
+            lang, title, meta_description, h1, preview, h1_on_blog_page, 
             text_on_blog_page, lead_text, content, modules, status, created_at, updated_at
         ) VALUES (
-            :lang, :alias, :title, :meta_description, :h1, :preview, :h1_on_blog_page, 
+            :lang, :title, :meta_description, :h1, :preview, :h1_on_blog_page, 
             :text_on_blog_page, :lead_text, :content, :modules, :status, :created_at, :updated_at
         )
     ";
@@ -46,7 +47,6 @@ try {
 
         // Привязываем параметры
         $stmt->bindParam(':lang', $row[1]);
-        $stmt->bindParam(':alias', $row[2]);
         $stmt->bindParam(':title', $row[3]);
         $stmt->bindParam(':meta_description', $row[4]);
         $stmt->bindParam(':h1', $row[5]);
@@ -71,8 +71,7 @@ try {
         $stmt2->bindParam(':url', $row[2]);
         $insertedId = $PDO->lastInsertId();
         $stmt2->bindParam(':section_id', $insertedId);
-        $constant = 2;
-        $stmt2->bindParam(':section_type', $constant);
+        $stmt2->bindParam(':section_type', $pagesTypes['POST']);
 
         // Выполняем запрос
         $stmt2->execute();
@@ -80,6 +79,7 @@ try {
 
     // Подтверждаем транзакцию
     $PDO->commit();
+    echo "Table blog_posts has been imported successfully.<br>";
 } catch (Exception $e) {
     // Если ошибка, откатываем транзакцию
     $PDO->rollBack();

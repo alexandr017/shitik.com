@@ -6,6 +6,7 @@
     /*#fb5607;*/
     /*#ffbe0b;*/
 }
+/* coolors.co/palettes/trending */
 
 html {
     scroll-behavior: smooth;
@@ -18,14 +19,35 @@ div, p, h1, h2, .h2, h3, h4, h5, h6, span, small, li, a, b,i,strong, li, table {
 
 a {
     color: #3a86ff;
+    text-decoration-color:
+            color-mix(in srgb, #3a86ff, transparent 75%);
+}
+a:hover {
+    text-decoration-color: #3a86ff;
 }
 
 h1{
     font-size: 1.7em;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 h2, .h2 {
     font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h3, .h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h4, .h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 img{
@@ -84,6 +106,21 @@ table tr:nth-child(even) {
 }
 
 @media screen and (max-width: 992px) {
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2, .h2 {
+        font-size: 1.3em;
+    }
+
+    h3, .h3 {
+        font-size: 1.1em;
+    }
+
+    h4, .h4 {
+        font-size: 1em;
+    }
     #toTopButton {
         max-width: 38px;
         bottom: 75px;

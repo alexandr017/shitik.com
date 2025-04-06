@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                подложке и окну чтобы показать их. */
             modalElem.classList.add('active');
             overlay.classList.add('active');
+            document.querySelector('body').style.overflow = 'hidden';
         }); // end click
 
     }); // end foreach
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             parentModal.classList.remove('active');
             overlay.classList.remove('active');
+            document.querySelector('body').style.overflow = '';
         });
 
     }); // end foreach
@@ -51,10 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.addEventListener('keyup', function (e) {
         var key = e.keyCode;
 
-        if (key == 27) {
+        if (key === 27) {
 
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
+            document.querySelector('body').style.overflow = '';
         };
     }, false);
 
@@ -62,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
+        document.querySelector('body').style.overflow = '';
     });
 
 

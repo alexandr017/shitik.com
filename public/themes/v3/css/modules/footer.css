@@ -80,7 +80,15 @@ footer .links-wrap {
 
 }
 
+.alert {
+    padding: 7px;
+    border-radius: 5px;
+}
 
+.alert-info {
+    background:  #f1f1f1;
+    border: 1px solid #dadada;
+}
 
 
 

@@ -45,6 +45,7 @@ try {
 
     // Подтверждаем транзакцию
     $PDO->commit();
+    echo "Table my_books_grades has been imported successfully.<br>";
 } catch (Exception $e) {
     // Если ошибка, откатываем транзакцию
     $PDO->rollBack();

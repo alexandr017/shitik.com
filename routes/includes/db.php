@@ -12,4 +12,5 @@ return [
     'import/blog_posts' => 'db/import/blog_posts.php',
     'import/my_books_grades' => 'db/import/my_books_grades.php',
     'import/static_pages' => 'db/import/static_pages.php',
+    'import/books_reviews' => 'db/import/books_reviews.php',
 ];

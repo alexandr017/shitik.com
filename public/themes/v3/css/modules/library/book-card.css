@@ -1,0 +1,56 @@
+.book {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-gap: 20px;
+    align-items: start;
+    margin: 20px 0 0;
+    background-color: #f8f8f8;
+    padding: 16px;
+    border-radius: 15px;
+    border: 1px solid #dadada;
+}
+
+.book img {
+    max-width: 240px;
+}
+
+.book .authors, .book .book-label {
+    margin-bottom: 10px;
+}
+
+.content .book {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .book {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-gap: 12px;
+    }
+    .book img {
+        max-width: 200px;
+    }
+    .book .authors, .book .book-label {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book {
+        grid-template-columns: 1fr;
+    }
+    .book .cover-wrap {
+        margin: auto;
+    }
+
+    .book .img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .content .book {
+        margin-bottom: 12px;
+    }
+}

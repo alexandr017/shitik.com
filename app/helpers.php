@@ -2,7 +2,7 @@
 
 function renderView(string $pageName, array $data = []) : string
 {
-    $file = DOCUMENT_ROOT . '/resources/view/' . $pageName;
+    $file = DOCUMENT_ROOT . '/resources/views/' . $pageName;
 
     if (file_exists($file)) {
         extract($data);
@@ -54,20 +54,35 @@ function deletedPages() : array
 function getLocale($url = null) : ?string
 {
     if ($url === null) {
-        $url = $_SERVER['REQUEST_URI'];
+        if (isset($_SERVER['PATH_INFO'])) {
+            $url = $_SERVER['REQUEST_URI'];
+        }
     }
 
     $parsedUrl = parse_url($url);
     if (!isset($parsedUrl['path'])) {
-        return null;
+        $_SESSION['lang'] = 'en';
+        return 'en';
     }
 
     $pathParts = explode('/', trim($parsedUrl['path'], '/'));
 
-    if (!empty($pathParts[0])) {
+    $allowedLangSession = ['en', 'ru', 'es', 'pt', 'fr', 'de', 'zh', 'hi'];
+    if (!empty($pathParts[0]) && in_array($pathParts[0], $allowedLangSession)) {
+        $_SESSION['lang'] = $pathParts[0];
         return $pathParts[0];
+    } else {
+        $urlsToSetNewLangSession = ['/', '/en', '/ru', '/es', '/pt', '/fr', '/de', '/zh', '/hi'];
+        if (in_array($url, $urlsToSetNewLangSession)) {
+            $_SESSION['lang'] = $url;
+            return $url;
+        }
+        if (isset($_SESSION['lang']) && !in_array($url, $urlsToSetNewLangSession)) {
+            return $_SESSION['lang'];
+        }
     }
 
+    $_SESSION['lang'] = 'en';
     return 'en';
 }
 
@@ -119,6 +134,12 @@ function emptyStrToNull($data) : string|array|null
 
 function contentRender(string $content) : string
 {
+    $blog_imdb_movies_table_ru = file_get_contents(DOCUMENT_ROOT . '/resources/views/v3/shortcodes/ru/blog_imdb_movies_table_ru.php');
+    $content = str_replace('[blog_imdb_movies_table_ru]', $blog_imdb_movies_table_ru, $content);
+
+    $blog_kinopoisk_movies_table_ru = file_get_contents(DOCUMENT_ROOT . '/resources/views/v3/shortcodes/ru/blog_kinopoisk_movies_table_ru.php');
+    $content = str_replace('[blog_kinopoisk_movies_table_ru]', $blog_kinopoisk_movies_table_ru, $content);
+
     return $content;
 }
 
@@ -223,4 +244,23 @@ function lang($key, $locale = null) : string
 function getPostDescription($post) : string
 {
     return $post->text_on_blog_page ?? $post->lead_text ?? makeShortText($post->content, 400);
+}
+
+function getTextGradeForBook(int $grade) : array
+{
+    if ($grade  >= 8) {
+        $class = 'b-label-great';
+        $text = lang('library.grade.great');
+    } elseif ($grade >= 6) {
+        $class = 'b-label-good';
+        $text = lang('library.grade.good');
+    } elseif ($grade >= 4) {
+        $class = 'b-label-normal';
+        $text = lang('library.grade.normal');
+    } else {
+        $class = 'b-label-bad';
+        $text = lang('library.grade.bad');
+    }
+
+    return [$text, $class];
 }

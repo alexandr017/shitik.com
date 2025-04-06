@@ -33,10 +33,12 @@ if ($tableExists) {
     $result = $query->fetch(PDO::FETCH_ASSOC);
 
     if ($result) {
+
+         $pagesTypes = include __DIR__ . '/../config/page-types.php';
          match ($result['section_type']) {
-            1 => $controller = new \App\Controllers\Dynamics\StaticPagesController(),
-            2 => $controller = new \App\Controllers\Dynamics\BlogPostController(),
-            3 => $controller = new \App\Controllers\Dynamics\BookReviewsController(),
+             $pagesTypes['PAGE'] => $controller = new \App\Controllers\Dynamics\StaticPagesController(),
+             $pagesTypes['POST'] => $controller = new \App\Controllers\Dynamics\BlogPostController(),
+             $pagesTypes['BOOK'] => $controller = new \App\Controllers\Dynamics\BookReviewsController(),
             default => $controller = null,
         };
         return $controller?->render($result['section_id']);
