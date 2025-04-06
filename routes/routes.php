@@ -1,12 +1,6 @@
 <?php
 $currentRoute = $_SERVER['REQUEST_URI'];
 
-if (!in_array($currentRoute, ['/ru/library?show_type=short-list', '/ru/library?show_type=full-list'])) {
-    if (str_contains($currentRoute, "?")) {
-        $currentRoute = strstr($currentRoute, "?", true);
-    }
-}
-
 if ($currentRoute != '/') {
     $currentRoute = htmlspecialchars(preg_replace('/^\//', '', $currentRoute), ENT_QUOTES, 'UTF-8');
 }

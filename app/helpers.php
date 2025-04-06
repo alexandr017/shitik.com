@@ -47,7 +47,9 @@ function deletedPages() : array
     return [
         'ru/site',
         'ru/projects',
-        'ru/portfolio'
+        'ru/portfolio',
+        'ru/library?show_type=short-list',
+        'ru/library?show_type=full-list',
     ];
 }
 

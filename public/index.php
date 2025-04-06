@@ -24,6 +24,7 @@ ob_start();
 // Автозагрузка классов
 spl_autoload_register(function ($class) {
     $class = str_replace('App/', 'app/', $class);
+    $class = str_replace('App\\', 'app\\', $class);
     $path = DOCUMENT_ROOT . str_replace('\\', '/', $class) . '.php';
     if (file_exists($path)) {
         require_once $path;
