@@ -3,4 +3,5 @@
 return [
     'index' => 'Home',
     'blog' => 'Blog',
+    'library' => 'Library',
 ];

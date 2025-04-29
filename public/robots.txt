@@ -3,22 +3,22 @@ Disallow:
 
 Host: shitik.com
 
-https://shitik.com/en/sitemap-static-pages-xml
-https://shitik.com/ru/sitemap-static-pages-xml
-https://shitik.com/de/sitemap-static-pages-xml
-https://shitik.com/fr/sitemap-static-pages-xml
-https://shitik.com/es/sitemap-static-pages-xml
-https://shitik.com/pt/sitemap-static-pages-xml
-https://shitik.com/zh/sitemap-static-pages-xml
-https://shitik.com/hi/sitemap-static-pages-xml
+Sitemap: https://shitik.com/en/sitemap-static-pages-xml
+Sitemap: https://shitik.com/ru/sitemap-static-pages-xml
+Sitemap: https://shitik.com/de/sitemap-static-pages-xml
+Sitemap: https://shitik.com/fr/sitemap-static-pages-xml
+Sitemap: https://shitik.com/es/sitemap-static-pages-xml
+Sitemap: https://shitik.com/pt/sitemap-static-pages-xml
+Sitemap: https://shitik.com/zh/sitemap-static-pages-xml
+Sitemap: https://shitik.com/hi/sitemap-static-pages-xml
 
-https://shitik.com/ru/sitemap-blog-xml
+Sitemap: https://shitik.com/ru/sitemap-blog-xml
 
-https://shitik.com/en/sitemap-library-xml
-https://shitik.com/ru/sitemap-library-xml
-https://shitik.com/de/sitemap-library-xml
-https://shitik.com/fr/sitemap-library-xml
-https://shitik.com/es/sitemap-library-xml
-https://shitik.com/pt/sitemap-library-xml
-https://shitik.com/zh/sitemap-library-xml
-https://shitik.com/hi/sitemap-library-xml
+Sitemap: https://shitik.com/en/sitemap-library-xml
+Sitemap: https://shitik.com/ru/sitemap-library-xml
+Sitemap: https://shitik.com/de/sitemap-library-xml
+Sitemap: https://shitik.com/fr/sitemap-library-xml
+Sitemap: https://shitik.com/es/sitemap-library-xml
+Sitemap: https://shitik.com/pt/sitemap-library-xml
+Sitemap: https://shitik.com/zh/sitemap-library-xml
+Sitemap: https://shitik.com/hi/sitemap-library-xml
