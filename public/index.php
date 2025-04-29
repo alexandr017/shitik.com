@@ -18,6 +18,26 @@ if ($debugMode) {
     ini_set('display_errors', 1);
 }
 
+// временные редиректы
+$__path = $_SERVER['REQUEST_URI'];
+
+$redirectsTmp = [
+    '/ru/mans-search-for-meaning' => '/ru/library/mans-search-for-meaning',
+    '/en/mans-search-for-meaning' => '/en/library/mans-search-for-meaning',
+    '/es/mans-search-for-meaning' => '/es/library/mans-search-for-meaning',
+    '/pt/mans-search-for-meaning' => '/pt/library/mans-search-for-meaning',
+    '/zh/mans-search-for-meaning' => '/zh/library/mans-search-for-meaning',
+    '/fr/mans-search-for-meaning' => '/fr/library/mans-search-for-meaning',
+    '/de/mans-search-for-meaning' => '/de/library/mans-search-for-meaning',
+    '/hi/mans-search-for-meaning' => '/hi/library/mans-search-for-meaning',
+];
+
+if (array_key_exists($__path, $redirectsTmp)) {
+    header("Location: " . $redirectsTmp[$__path], true, 301);
+    exit;
+}
+
+
 // Запуск буферизации вывода
 ob_start();
 
