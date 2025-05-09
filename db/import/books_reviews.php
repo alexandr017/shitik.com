@@ -69,7 +69,7 @@ try {
         $stmt->bindParam(':number_of_reads', $row[17]);
         $stmt->bindParam(':total_pages', $row[18]);
         $stmt->bindParam(':pages_of_summary', $row[19]);
-        $review = $row[20] ?? '<p>test/p>';
+        $review = $row[20] ?? '';
         $stmt->bindParam(':review', $review);
         $stmt->bindParam(':is_unique_review', $row[21]);
         $color = trim($row[22]);

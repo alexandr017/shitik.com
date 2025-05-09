@@ -21,7 +21,7 @@ $sql = "CREATE TABLE IF NOT EXISTS books_reviews (
     number_of_reads TINYINT NOT NULL,
     total_pages INT NOT NULL,
     pages_of_summary INT,
-    review TEXT,
+    review LONGTEXT NOT NULL,
     is_unique_review BOOLEAN,
     color VARCHAR(7) NOT NULL,
     is_isset_page BOOLEAN NOT NULL,
