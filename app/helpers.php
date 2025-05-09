@@ -50,6 +50,8 @@ function deletedPages() : array
         'ru/portfolio',
         'ru/library?show_type=short-list',
         'ru/library?show_type=full-list',
+        'telegram-vote.php',
+        'sitemap.xml'
     ];
 }
 
