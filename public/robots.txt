@@ -22,3 +22,12 @@ Sitemap: https://shitik.com/es/sitemap-library-xml
 Sitemap: https://shitik.com/pt/sitemap-library-xml
 Sitemap: https://shitik.com/zh/sitemap-library-xml
 Sitemap: https://shitik.com/hi/sitemap-library-xml
+
+Sitemap: https://shitik.com/en/sitemap-movies-xml
+Sitemap: https://shitik.com/ru/sitemap-movies-xml
+Sitemap: https://shitik.com/de/sitemap-movies-xml
+Sitemap: https://shitik.com/fr/sitemap-movies-xml
+Sitemap: https://shitik.com/es/sitemap-movies-xml
+Sitemap: https://shitik.com/pt/sitemap-movies-xml
+Sitemap: https://shitik.com/zh/sitemap-movies-xml
+Sitemap: https://shitik.com/hi/sitemap-movies-xml

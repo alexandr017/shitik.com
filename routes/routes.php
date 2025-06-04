@@ -37,6 +37,7 @@ if ($tableExists) {
              $pagesTypes['PAGE'] => $controller = new \App\Controllers\Dynamics\StaticPagesController(),
              $pagesTypes['POST'] => $controller = new \App\Controllers\Dynamics\BlogPostController(),
              $pagesTypes['BOOK'] => $controller = new \App\Controllers\Dynamics\BookReviewsController(),
+             $pagesTypes['MOVIE'] => $controller = new \App\Controllers\Dynamics\MoviesReviewsController(),
             default => $controller = null,
         };
         return $controller?->render($result['section_id']);

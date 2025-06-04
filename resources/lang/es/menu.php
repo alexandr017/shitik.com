@@ -7,5 +7,6 @@ return [
     'travels' => 'Viajes',
     'library' => 'Biblioteca',
     'stats' => 'Estadísticas',
+    'movies' => 'Películas',
     'sitemap' => 'Mapa del sitio',
 ];

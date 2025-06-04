@@ -5,6 +5,7 @@ namespace app\Controllers;
 use App\Repositories\StaticPagesRepository;
 use App\Repositories\BlogRepository;
 use App\Repositories\LibraryRepository;
+use App\Repositories\MoviesRepository;
 
 final class SitemapXMLController
 {
@@ -76,6 +77,23 @@ final class SitemapXMLController
         foreach ($books as $book) {
             $xml .= '  <url>' . "\n";
             $xml .= '    <loc>' . getEnvValue('DOMAIN_NAME') . '/' . $book['url'] . '</loc>' . "\n";
+            $xml .= '  </url>' . "\n";
+        }
+        $xml .= '</urlset>';
+
+        echo $xml;
+    }
+
+    final public function movies() : void
+    {
+        header('Content-Type: application/xml');
+        $movies = (new MoviesRepository)->getAllEnableMoviesForSitemap(getLocale());
+
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+        foreach ($movies as $movie) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . getEnvValue('DOMAIN_NAME') . '/' . $movie['url'] . '</loc>' . "\n";
             $xml .= '  </url>' . "\n";
         }
         $xml .= '</urlset>';

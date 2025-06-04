@@ -1,9 +1,9 @@
 <?php
 includeCSS(['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/content', 'modules/footer']);
-include DOCUMENT_ROOT . '/view/v3/head.php';
+echo renderView('v3/modules/head.php');
 ?>
     <body>
-    <?php include DOCUMENT_ROOT . '/view/v3/menu.php'; ?>
+    <?php echo renderView('v3/modules/menu.php'); ?>
     <main class="container">
         <ul class="breadcrumb">
             <li><a href="/ru">Главная</a></li>
@@ -34,8 +34,8 @@ include DOCUMENT_ROOT . '/view/v3/head.php';
             </script>
         </div>
     </main>
-    <?php include DOCUMENT_ROOT . '/view/v3/footer.php'; ?>
-    <?php include DOCUMENT_ROOT . '/view/v3/js-scripts.php'; ?>
+    <?php echo renderView('v3/modules/footer.php'); ?>
+    <?php echo renderView('v3/modules/js-scripts.php'); ?>
     </body>
     </html>
 <?php die(); ?>

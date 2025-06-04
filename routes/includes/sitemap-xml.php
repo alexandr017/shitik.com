@@ -36,4 +36,13 @@ return [
     'pt/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
     'zh/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
     'hi/sitemap-library-xml' => [\app\Controllers\SitemapXMLController::class, 'library'],
+
+    'en/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'ru/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'de/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'fr/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'es/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'pt/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'zh/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
+    'hi/sitemap-movies-xml' => [\app\Controllers\SitemapXMLController::class, 'movies'],
 ];

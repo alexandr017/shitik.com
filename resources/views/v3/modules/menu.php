@@ -24,6 +24,11 @@
             <?php else : ?>
                 <li class="menu-li"><a href="/<?php echo getLocale() ?>/library" class="menu-a <?php if($url == getLocale() . '/library') echo 'active'?>"><span class="icon icon-library"></span><?php echo lang('menu.library') ?></a></li>
             <?php endif; ?>
+            <?php if($url == getLocale() . '/movies' || str_contains($url, '/movies/')) : ?>
+                <li class="menu-li active"><span class="icon icon-library"></span><?php echo lang('menu.movies') ?></li>
+            <?php else : ?>
+                <li class="menu-li"><a href="/<?php echo getLocale() ?>/movies" class="menu-a <?php if($url == getLocale() . '/movies') echo 'active'?>"><span class="icon icon-movies"></span><?php echo lang('menu.movies') ?></a></li>
+            <?php endif; ?>
             <?php if($url == getLocale() . '/stats') : ?>
                 <li class="menu-li active"><span class="icon icon-stats"></span><?php echo lang('menu.stats') ?></li>
             <?php else : ?>

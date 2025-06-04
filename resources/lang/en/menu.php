@@ -7,5 +7,6 @@ return [
     'travels' => 'Travels',
     'library' => 'Library',
     'stats' => 'Statistics',
+    'movies' => 'Movies',
     'sitemap' => 'Sitemap',
 ];

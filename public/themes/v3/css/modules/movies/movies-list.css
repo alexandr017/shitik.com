@@ -1,0 +1,172 @@
+.movies-list {
+}
+
+.movies-list .movie {
+    display: flex;
+    gap: 15px;
+    z-index: 1;
+    transition: box-shadow 0.3s linear;
+    padding: 15px 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.movies-list .movie .cover-wrap {
+    min-width: 200px;
+    width: 200px;
+    height: fit-content;
+}
+
+.movies-list .movie .cover-wrap img {
+    min-width: 200px;
+    width: 200px;
+    transform-origin: 0 50%;
+    transform: rotateY(0);
+    transition: all 0.45s ease;
+}
+
+.movies-list .movie a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.movies-list .movie .authors {
+    margin-bottom: 10px;
+}
+
+.movies-list .movie .movie-label-title {
+    color : #8e9097;
+}
+
+.movies-list .movie-label {
+    line-height: 1.7;
+}
+
+.movies-list .icon:before {
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    content: '';
+    margin-right: 5px;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.movies-list .i-genre:before {
+    background-image: url(/images/icons/movies/genre.png);
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.movies-list .i-country:before {
+    background-image: url(/images/icons/movies/country.png);
+    background-repeat: no-repeat;
+}
+
+.movies-list .i-year-created:before {
+    background-image: url(/images/icons/movies/year-created.png);
+    background-repeat: no-repeat;
+}
+
+.movies-list .i-year-watching:before {
+    background-image: url(/images/icons/movies/year-watching.png);
+    background-repeat: no-repeat;
+}
+
+.movies-list .i-my-rating:before {
+    background-image: url(/images/icons/movies/my-rating.png);
+    background-repeat: no-repeat;
+}
+
+.movies-list .i-imdb-rating:before {
+    background-image: url(/images/icons/movies/imdb-rating.png);
+    background-repeat: no-repeat;
+}
+
+.movies-list .i-duration:before {
+    background-image: url(/images/icons/movies/duration.png);
+    background-repeat: no-repeat;
+}
+
+.movies-list .link:after {
+    background: url(/images/icons/movies/arrow.png) no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    content: '';
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.movies-list .movie + .movie {
+    border-top: 1px solid #d9d9d9;
+}
+
+.movies-list .movie:hover {
+    cursor: pointer;
+    background: #f8f6f6;
+}
+
+.movies-list .movie:hover .link {
+    color: #3a86ff;
+}
+
+.movies-list .movie::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #3a86ff;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.movies-list .movie:hover::before {
+    width: 100%;
+    transform: translateX(0);
+}
+
+
+@media screen and (max-width: 768px) {
+    .movies-list .movie .cover-wrap {
+        min-width: 150px;
+        width: 150px;
+    }
+
+    .movies-list .movie .cover-wrap img {
+        width: 150px;
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .movies-list .movie .cover-wrap {
+        min-width: 100px;
+        width: 100px;
+    }
+
+    .movies-list .movie .cover-wrap img {
+        width: 100px;
+        min-width: 100px;
+    }
+
+    .modal .movies-list {
+        overflow: scroll;
+        max-height: 300px;
+    }
+
+    .modal .movies-list .movie {
+        flex-direction: column;
+    }
+
+    .modal .movies-list .movie .cover-wrap {
+        margin: auto;
+    }
+}
+

@@ -5,6 +5,7 @@ namespace app\Controllers\Dynamics;
 use App\Repositories\BlogRepository;
 use App\Repositories\LibraryRepository;
 use App\Repositories\StaticPagesRepository;
+use App\Repositories\MoviesRepository;
 
 final class StaticPagesController implements DynamicsInterface
 {
@@ -26,6 +27,7 @@ final class StaticPagesController implements DynamicsInterface
             'simple-page' => renderView('v3/templates/static-pages/simple-page.php', compact('page')),
             'blog-index' => $this->blogIndexPage($page),
             'library-index' => $this->libraryIndexPage($page),
+            'movies-index' => $this->moviesIndexPage($page),
             'sitemap' => $this->sitemapIndexPage($page),
             default => abort(404),
         };
@@ -43,6 +45,12 @@ final class StaticPagesController implements DynamicsInterface
     {
         $books = (new LibraryRepository)->getAllEnableBooks(getLocale(), 'DESC');
         return renderView('v3/templates/library/index.php', compact('page', 'books'));
+    }
+
+    final public function moviesIndexPage($page)
+    {
+        $movies = (new MoviesRepository)->getAllEnableMovies(getLocale(), 'DESC');
+        return renderView('v3/templates/movies/index.php', compact('page', 'movies'));
     }
 
     final public function sitemapIndexPage($page)
@@ -65,7 +73,16 @@ final class StaticPagesController implements DynamicsInterface
                 $children = [];
                 $books = (new LibraryRepository)->getAllEnableBookForSitemap($currentLang);
                 foreach ($books as $book) {
-                    $children[] = (object)$book;
+                    $children[] = (object) $book;
+                }
+
+                $_page['children'] = $children;
+            }
+            if ($_page["template"] == 'movies-index') {
+                $children = [];
+                $movies = (new MoviesRepository)->getAllEnableMoviesForSitemap($currentLang);
+                foreach ($movies as $movie) {
+                    $children[] = (object) $movie;
                 }
 
                 $_page['children'] = $children;
