@@ -280,3 +280,25 @@ Stack trace:
 #0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
 #1 {main}
 
+[2025-04-23 12:47:32] Uncaught ErrorException: http_response_code(): Cannot set response code - headers already sent (output started at /Users/admin/projects/home/shitik.com/public/index.php:2) in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:24
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleError(2, 'http_response_c...', '/Users/admin/pr...', 24)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(24): http_response_code(500)
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 24
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
+[2025-04-23 12:48:34] Uncaught ErrorException: http_response_code(): Cannot set response code - headers already sent (output started at /Users/admin/projects/home/shitik.com/public/index.php:2) in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php:24
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleError(2, 'http_response_c...', '/Users/admin/pr...', 24)
+#1 /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php(24): http_response_code(500)
+#2 [internal function]: App\Errors\ErrorHandler::handleException(Object(ErrorException))
+#3 {main}
+  thrown in /Users/admin/projects/home/shitik.com/app/Errors/ErrorHandler.php on line 24
+Stack trace:
+#0 [internal function]: App\Errors\ErrorHandler::handleShutdown()
+#1 {main}
+
