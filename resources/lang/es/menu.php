@@ -3,6 +3,7 @@
 return [
     'menu' => 'Menú',
     'about' => 'Sobre mí',
+    'about-project' => 'Acerca del proyecto',
     'blog' => 'Blog',
     'travels' => 'Viajes',
     'library' => 'Biblioteca',

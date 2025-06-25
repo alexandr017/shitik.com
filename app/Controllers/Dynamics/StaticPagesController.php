@@ -25,6 +25,7 @@ final class StaticPagesController implements DynamicsInterface
             'super-index' => renderView('v3/templates/static-pages/super-index.php', compact('page')),
             'index' => renderView('v3/templates/static-pages/index.php', compact('page')),
             'simple-page' => renderView('v3/templates/static-pages/simple-page.php', compact('page')),
+            'about-project' => renderView('v3/templates/static-pages/about-project.php', compact('page')),
             'blog-index' => $this->blogIndexPage($page),
             'library-index' => $this->libraryIndexPage($page),
             'movies-index' => $this->moviesIndexPage($page),

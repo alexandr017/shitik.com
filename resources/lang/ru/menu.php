@@ -3,6 +3,7 @@
 return [
     'menu' => 'Меню',
     'about' => 'О себе',
+    'about-project' => 'О проекте',
     'blog' => 'Блог',
     'travels' => 'Путешествия',
     'library' => 'Библиотека',

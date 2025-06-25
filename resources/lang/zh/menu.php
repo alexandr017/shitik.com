@@ -3,6 +3,7 @@
 return [
     'menu' => '菜单',
     'about' => '关于我',
+    'about-project' => '关于项目',
     'blog' => '博客',
     'travels' => '旅行',
     'library' => '图书馆',

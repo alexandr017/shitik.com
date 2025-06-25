@@ -81,6 +81,7 @@ aside .module p {
         bottom: 25px;
         left: 25px;
         width: calc(100% - 30px);
+        z-index: 11;
     }
 
     aside#mobileSocialMedia .module {
