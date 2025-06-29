@@ -20,10 +20,10 @@ try {
     // Подготовка SQL запроса
     $sql = "
         INSERT INTO blog_posts (
-            lang, title, meta_description, h1, preview, h1_on_blog_page, 
+            post_id, lang, title, meta_description, h1, preview, h1_on_blog_page, 
             text_on_blog_page, lead_text, content, modules, status, created_at, updated_at
         ) VALUES (
-            :lang, :title, :meta_description, :h1, :preview, :h1_on_blog_page, 
+            :post_id, :lang, :title, :meta_description, :h1, :preview, :h1_on_blog_page, 
             :text_on_blog_page, :lead_text, :content, :modules, :status, :created_at, :updated_at
         )
     ";
@@ -46,29 +46,30 @@ try {
         }
 
         // Привязываем параметры
-        $stmt->bindParam(':lang', $row[1]);
-        $stmt->bindParam(':title', $row[3]);
-        $stmt->bindParam(':meta_description', $row[4]);
-        $stmt->bindParam(':h1', $row[5]);
-        $stmt->bindParam(':preview', $row[6]);
-        $emptyStrToNull = emptyStrToNull($row[7]);
+        $stmt->bindParam(':post_id', $row[1]);
+        $stmt->bindParam(':lang', $row[2]);
+        $stmt->bindParam(':title', $row[4]);
+        $stmt->bindParam(':meta_description', $row[5]);
+        $stmt->bindParam(':h1', $row[6]);
+        $stmt->bindParam(':preview', $row[7]);
+        $emptyStrToNull = emptyStrToNull($row[8]);
         $stmt->bindParam(':h1_on_blog_page', $emptyStrToNull);
-        $emptyStrToNull1 = emptyStrToNull($row[8]);
+        $emptyStrToNull1 = emptyStrToNull($row[9]);
         $stmt->bindParam(':text_on_blog_page', $emptyStrToNull1);
-        $emptyStrToNull2 = emptyStrToNull($row[9]);
+        $emptyStrToNull2 = emptyStrToNull($row[10]);
         $stmt->bindParam(':lead_text', $emptyStrToNull2);
-        $stmt->bindParam(':content', $row[10]);
-        $emptyStrToNull3 = emptyStrToNull($row[11]);
+        $stmt->bindParam(':content', $row[11]);
+        $emptyStrToNull3 = emptyStrToNull($row[12]);
         $stmt->bindParam(':modules', $emptyStrToNull3);
-        $stmt->bindParam(':status', $row[12]);
-        $stmt->bindParam(':created_at', $row[13]);
-        $stmt->bindParam(':updated_at', $row[14]);
+        $stmt->bindParam(':status', $row[13]);
+        $stmt->bindParam(':created_at', $row[14]);
+        $stmt->bindParam(':updated_at', $row[15]);
 
         // Выполняем запрос
         $stmt->execute();
 
         // Привязываем параметры
-        $stmt2->bindParam(':url', $row[2]);
+        $stmt2->bindParam(':url', $row[3]);
         $insertedId = $PDO->lastInsertId();
         $stmt2->bindParam(':section_id', $insertedId);
         $stmt2->bindParam(':section_type', $pagesTypes['POST']);

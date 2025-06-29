@@ -11,7 +11,7 @@ includeCSS($modules);
 $title = $post->title;
 $metaDescription = $post->meta_description;
 $preview = getEnvValue('DOMAIN_NAME') . $post->preview;
-echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'preview'));
+echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'preview', 'alternates'));
 ?>
 <body>
 <?php echo renderView('v3/modules/menu.php'); ?>

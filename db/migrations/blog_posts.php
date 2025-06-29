@@ -3,6 +3,7 @@ global $PDO;
 
 $sql = "CREATE TABLE IF NOT EXISTS blog_posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    post_id INT NOT NULL,
     lang CHAR(2) NOT NULL,
     title VARCHAR(255) NOT NULL,
     meta_description VARCHAR(500),
