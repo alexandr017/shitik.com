@@ -136,8 +136,12 @@ function emptyStrToNull($data) : string|array|null
 
 function contentRender(string $content) : string
 {
-    $blog_imdb_movies_table_ru = file_get_contents(DOCUMENT_ROOT . '/resources/views/v3/shortcodes/ru/blog_imdb_movies_table_ru.php');
-    $content = str_replace('[blog_imdb_movies_table_ru]', $blog_imdb_movies_table_ru, $content);
+    $currentLang = getLocale();
+    $filePath = DOCUMENT_ROOT . "/resources/views/v3/shortcodes/$currentLang/blog_imdb_movies_table_$currentLang.php";
+    if (file_exists($filePath)) {
+        $blogImdbMoviesTable = file_get_contents($filePath);
+        $content = str_replace("[blog_imdb_movies_table_$currentLang]", $blogImdbMoviesTable, $content);
+    }
 
     $blog_kinopoisk_movies_table_ru = file_get_contents(DOCUMENT_ROOT . '/resources/views/v3/shortcodes/ru/blog_kinopoisk_movies_table_ru.php');
     $content = str_replace('[blog_kinopoisk_movies_table_ru]', $blog_kinopoisk_movies_table_ru, $content);
