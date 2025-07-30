@@ -12,7 +12,7 @@ $sql = "CREATE TABLE IF NOT EXISTS blog_posts (
     h1_on_blog_page VARCHAR(255) DEFAULT NULL,
     text_on_blog_page VARCHAR(500) DEFAULT NULL,
     lead_text TEXT DEFAULT NULL,
-    content TEXT,
+    content LONGTEXT,
     modules VARCHAR(255) DEFAULT NULL,
     status TINYINT(1) NOT NULL DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
