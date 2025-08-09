@@ -14,7 +14,7 @@ class CommentsController
 
         // Проверка reCAPTCHA
         $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
-        $response = file_get_contents($verifyUrl . '?secret=' . getEnvValue('GOOGLE_CAPTCHA_SECRET') . '&response=' . $_POST['token']);
+        $response = file_get_contents($verifyUrl . '?secret=' . getEnvValue('GOOGLE_CAPTCHA_SECRET') . '&response=' . $_POST['g-recaptcha-response']);
         $responseKeys = json_decode($response, true);
 
         if (empty($responseKeys['success']) || $responseKeys['score'] < 0.5) {
