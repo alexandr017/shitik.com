@@ -8,7 +8,7 @@
     <div class="show-comment-form-wrap">
         <button class="show-comment-form"><?php echo lang('comments.write-comment'); ?></button>
     </div>
-    <form class="form" method="post" action="/comments/add">
+    <form class="form" method="post" action="#">
         <input type="text" name="name" placeholder="<?php echo lang('comments.name'); ?>" required>
         <textarea name="comment" placeholder="<?php echo lang('comments.content'); ?>" required></textarea>
         <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
