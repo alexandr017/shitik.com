@@ -29,6 +29,12 @@
                 <li class="menu-li"><a href="/<?php echo getLocale() ?>/movies" class="menu-a <?php if($url == getLocale() . '/movies') echo 'active'?>"><span class="icon icon-movies"></span><?php echo lang('menu.movies') ?></a></li>
             <?php endif; ?>
 
+            <?php if($url == getLocale() . '/my-books' || str_contains($url, '/my-books/')) : ?>
+                <li class="menu-li active"><span class="icon icon-my-books"></span><?php echo lang('menu.my-books') ?></li>
+            <?php else : ?>
+                <li class="menu-li"><a href="/<?php echo getLocale() ?>/my-books" class="menu-a <?php if($url == getLocale() . '/my-books') echo 'active'?>"><span class="icon icon-my-books"></span><?php echo lang('menu.my-books') ?></a></li>
+            <?php endif; ?>
+
             <?php if($url == getLocale() . '/travels') : ?>
                 <li class="menu-li active"><span class="icon icon-travel"></span><?php echo lang('menu.travels') ?></li>
             <?php else : ?>

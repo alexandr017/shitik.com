@@ -1,6 +1,7 @@
 <?php
 
-$mainModules = ['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/content', 'modules/sidebar', 'modules/footer', 'modules/movies/movie-card'];
+$mainModules = ['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/author',
+    'modules/content', 'modules/sidebar', 'modules/footer', 'modules/movies/movie-card'];
 $additionalModules = [];
 
 includeCSS($mainModules);
@@ -19,10 +20,15 @@ echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'prev
     </ul>
 
     <h1><?php echo $movie->h1 ?></h1>
-<!--    <time datetime="--><?php //echo  date('Y-m-d', strtotime($movie->created_at)) ?><!--" class="date-pub">--><?php //echo getDateByLang($movie->created_at, getLocale()) ?><!--</time>-->
-    <span class="unique" data-text="<?php echo lang('general.unique'); ?>"></span>
+
     <div class="content-wrap">
         <div class="content">
+            <?php echo renderView('v3/modules/author.php'); ?>
+
+            <div class="post-info">
+                <span class="unique" data-text="<?php echo lang('general.unique'); ?>"></span>
+            </div>
+
             <?php echo renderView('v3/modules/movies/movie-card.php', compact('movie')); ?>
             <?php echo contentRender($movie->review); ?>
         </div>

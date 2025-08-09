@@ -25,29 +25,6 @@ p, .content b {
     margin-top: 10px;
 }
 
-.date-pub {
-    color: #a9a9a9;
-    font-size: 0.9rem;
-    line-height: 1rem;
-    display: inline-block;
-    margin: 10px 5px 15px 0;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.unique {
-    background: #ff006e;
-    padding: 4px 8px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 0.9rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-
-}
-
-.unique:before {
-    content: attr(data-text);
-}
-
 .content h2, .content .h2 {
     margin: 30px 0 10px 0;
     font-weight: bold;
@@ -98,6 +75,29 @@ p, .content b {
 
 .content table {
     margin: auto auto 15px;
+}
+
+
+.post-info .date-pub {
+    font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.post-info .unique {
+    background: #ff006e;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.post .post-info {
+    margin-bottom: 15px;
+}
+
+.post-info .unique:before {
+    content: attr(data-text);
 }
 
 

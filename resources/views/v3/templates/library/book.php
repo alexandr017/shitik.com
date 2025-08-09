@@ -1,6 +1,7 @@
 <?php
 
-$mainModules = ['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/content', 'modules/sidebar', 'modules/footer', 'modules/library/library', 'modules/library/library-list', 'modules/library/book-card'];
+$mainModules = ['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/author', 'modules/content',
+    'modules/sidebar', 'modules/footer', 'modules/library/library', 'modules/library/library-list', 'modules/library/book-card'];
 $additionalModules = [];
 
 includeCSS($mainModules);
@@ -19,10 +20,14 @@ echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'prev
     </ul>
 
     <h1><?php echo $book->h1 ?></h1>
-<!--    <time datetime="--><?php //echo  date('Y-m-d', strtotime($book->created_at)) ?><!--" class="date-pub">--><?php //echo getDateByLang($book->created_at, getLocale()) ?><!--</time>-->
-    <span class="unique" data-text="<?php echo lang('general.unique'); ?>"></span>
     <div class="content-wrap">
         <div class="content">
+            <?php echo renderView('v3/modules/author.php'); ?>
+
+            <div class="post-info">
+                <span class="unique" data-text="<?php echo lang('general.unique'); ?>"></span>
+            </div>
+
             <?php echo renderView('v3/modules/library/book-card.php', compact('book', 'books')); ?>
             <?php echo contentRender($book->review); ?>
         </div>
