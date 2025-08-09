@@ -2,6 +2,7 @@
 
 namespace app\Controllers\Dynamics;
 
+use app\Repositories\CommentRepository;
 use App\Repositories\LibraryRepository;
 
 final class BookReviewsController implements DynamicsInterface
@@ -27,6 +28,8 @@ final class BookReviewsController implements DynamicsInterface
             }
         }
 
-        echo renderView('v3/templates/library/book.php', ['book' => $book, 'books' => $books, 'alternates' => $alternates]);
+        $comments = (new CommentRepository())->getActiveCommentsByEntity(TYPE_PAGES['BOOK'], $id);
+
+        echo renderView('v3/templates/library/book.php', compact('book',  'books', 'alternates', 'comments'));
     }
 }

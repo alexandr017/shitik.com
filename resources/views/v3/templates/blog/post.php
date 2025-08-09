@@ -1,8 +1,7 @@
 <?php
-
 $mainModules = [
     'modules/general', 'modules/fonts', 'modules/header', 'modules/author',
-    'modules/breadcrumb', 'modules/content', 'modules/sidebar', 'modules/footer'];
+    'modules/breadcrumb', 'modules/content', 'modules/comments', 'modules/sidebar', 'modules/footer'];
 $additionalModules = [];
 if ($post->modules !== null) {
     $additionalModules = explode(PHP_EOL, $post->modules);
@@ -34,6 +33,13 @@ echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'prev
             </div>
 
             <?php echo contentRender($post->content); ?>
+
+            <?php echo renderView('v3/modules/comments.php', [
+                'entryType' => TYPE_PAGES['POST'],
+                'entryId' => $post->id,
+                'comments' => $comments
+            ]); ?>
+
         </div>
         <?php echo renderView('v3/modules/sidebar.php'); ?>
     </div>

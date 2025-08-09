@@ -30,6 +30,13 @@ echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'prev
 
             <?php echo renderView('v3/modules/library/book-card.php', compact('book', 'books')); ?>
             <?php echo contentRender($book->review); ?>
+
+            <?php echo renderView('v3/modules/comments.php', [
+                'entryType' => TYPE_PAGES['BOOK'],
+                'entryId' => $book->id,
+                'comments' => $comments
+            ]); ?>
+
         </div>
         <?php echo renderView('v3/modules/sidebar.php'); ?>
     </div>

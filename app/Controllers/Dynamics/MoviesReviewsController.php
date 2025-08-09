@@ -2,6 +2,7 @@
 
 namespace app\Controllers\Dynamics;
 
+use app\Repositories\CommentRepository;
 use App\Repositories\MoviesRepository;
 
 class MoviesReviewsController
@@ -26,6 +27,8 @@ class MoviesReviewsController
             }
         }
 
-        echo renderView('v3/templates/movies/movie.php', ['movie' => $movie, 'movies' => $movies, 'alternates' => $alternates]);
+        $comments = (new CommentRepository())->getActiveCommentsByEntity(TYPE_PAGES['MOVIE'], $id);
+
+        echo renderView('v3/templates/movies/movie.php', compact('movie',  'movies', 'alternates', 'comments'));
     }
 }

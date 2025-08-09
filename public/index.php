@@ -4,6 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0); // По умолчанию не показываем ошибки
 
 const DOCUMENT_ROOT = __DIR__ . '/../';
+define("TYPE_PAGES", include DOCUMENT_ROOT . '/config/page-types.php');
 
 // Подключаем обработчик ошибок
 require_once DOCUMENT_ROOT . '/app/helpers.php';

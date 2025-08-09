@@ -31,6 +31,13 @@ echo renderView('v3/modules/head.php', compact('title', 'metaDescription', 'prev
 
             <?php echo renderView('v3/modules/movies/movie-card.php', compact('movie')); ?>
             <?php echo contentRender($movie->review); ?>
+
+            <?php echo renderView('v3/modules/comments.php', [
+                'entryType' => TYPE_PAGES['MOVIE'],
+                'entryId' => $movie->id,
+                'comments' => $comments
+            ]); ?>
+
         </div>
         <?php echo renderView('v3/modules/sidebar.php'); ?>
     </div>

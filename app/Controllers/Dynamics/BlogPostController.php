@@ -3,6 +3,7 @@
 namespace app\Controllers\Dynamics;
 
 use App\Repositories\BlogRepository;
+use App\Repositories\CommentRepository;
 
 final class BlogPostController implements DynamicsInterface
 {
@@ -31,7 +32,9 @@ final class BlogPostController implements DynamicsInterface
             }
         }
 
-        return renderView( 'v3/templates/blog/post.php', compact('post', 'alternates') );
+        $comments = (new CommentRepository())->getActiveCommentsByEntity(TYPE_PAGES['POST'], $id);
+
+        return renderView( 'v3/templates/blog/post.php', compact('post', 'alternates', 'comments'));
 
 
     }
