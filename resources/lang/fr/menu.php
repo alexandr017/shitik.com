@@ -9,5 +9,7 @@ return [
     'library' => 'Bibliothèque',
     'stats' => 'Statistiques',
     'movies' => 'Films',
+    'my-books' => 'Mes livres',
+    'space' => 'Espace',
     'sitemap' => 'Plan du site',
 ];

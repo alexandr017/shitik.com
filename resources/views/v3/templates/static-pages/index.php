@@ -32,8 +32,8 @@ $currentLang = getLocale();
     <div class="item purple lightning-effect">Shitik.com<br><span class="icon-big icon-site"></span> <h1><?php echo $page['h1'] ?? '' ?></h1></div>
     <a href="/<?php echo $currentLang; ?>/stats" class="item lightning-effect"><span class="icon icon-stats"></span><?php echo lang('template-index.stats') ?></a>
     <a href="/<?php echo $currentLang; ?>/movies" class="item lightning-effect"><span class="icon icon-movies"></span><?php echo lang('template-index.movies') ?></a>
-    <div class="item disable"><span class="icon disable icon-lock"></span><?php echo lang('template-index.soon-new-section') ?></div>
-    <div class="item disable"><span class="icon disable icon-lock"></span><?php echo lang('template-index.soon-new-section') ?></div>
+    <a href="/<?php echo $currentLang; ?>/my-books" class="item lightning-effect"><span class="icon icon-my-books"></span><?php echo lang('template-index.my-books') ?></a>
+    <div class="item disable"><span class="icon disable icon-space"></span><?php echo lang('template-index.soon-new-section') ?></div>
 </div>
 <?php echo renderView('v3/modules/micro-data.php'); ?>
 <?php echo renderView('v3/modules/js-scripts.php'); ?>

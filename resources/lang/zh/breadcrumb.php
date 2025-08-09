@@ -5,4 +5,6 @@ return [
     'blog' => '博客',
     'library' => '图书馆',
     'movies' => '电影',
+    'my-books' => '我的书',
+    'space' => '宇宙',
 ];

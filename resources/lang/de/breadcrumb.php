@@ -5,4 +5,6 @@ return [
     'blog' => 'Blog',
     'library' => 'Bibliothek',
     'movies' => 'Filme',
+    'my-books' => 'Meine Bücher',
+    'space' => 'Weltraum',
 ];

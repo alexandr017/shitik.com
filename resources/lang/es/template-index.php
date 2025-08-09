@@ -7,5 +7,7 @@ return [
     'library' => 'Biblioteca',
     'stats' => 'Estadísticas',
     'movies' => 'Películas',
+    'my-books' => 'Mis libros',
+    'space' => 'Espacio',
     'soon-new-section' => 'Próximamente, una nueva sección',
 ];

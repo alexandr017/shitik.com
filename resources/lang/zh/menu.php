@@ -9,5 +9,7 @@ return [
     'library' => '图书馆',
     'stats' => '统计数据',
     'movies' => '电影',
+    'my-books' => '我的书',
+    'space' => '宇宙',
     'sitemap' => '网站地图',
 ];

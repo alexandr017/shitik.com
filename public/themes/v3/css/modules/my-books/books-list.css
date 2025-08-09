@@ -1,0 +1,60 @@
+.books-list {
+    display: flex;
+    gap: 50px;
+}
+
+.books-list .book {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.books-list .book img {
+    border: 1px solid #ccc;
+}
+
+.books-list .book:hover img {
+    border: 1px solid #8338ec;
+}
+
+.books-list .book.disable:hover img {
+    border: 1px solid #999;
+}
+
+
+.books-list .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.books-list .year-published {
+    font-size: 18px;
+}
+
+.books-list .disable {
+    opacity: 0.5;
+}
+
+.books-list .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .books-list {
+        flex-direction: column;
+    }
+
+    .books-list img {
+        max-width: 200px;
+    }
+
+    .books-list .book {
+        flex-direction: row;
+    }
+}

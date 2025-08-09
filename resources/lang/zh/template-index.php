@@ -7,5 +7,7 @@ return [
     'library' => '书库',
     'stats' => '统计数据',
     'movies' => '电影',
+    'my-books' => '我的书',
+    'space' => '宇宙',
     'soon-new-section' => '新板块即将推出',
 ];

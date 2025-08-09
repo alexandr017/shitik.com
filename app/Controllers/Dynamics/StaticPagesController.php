@@ -26,6 +26,7 @@ final class StaticPagesController implements DynamicsInterface
             'index' => renderView('v3/templates/static-pages/index.php', compact('page')),
             'simple-page' => renderView('v3/templates/static-pages/simple-page.php', compact('page')),
             'about-project' => renderView('v3/templates/static-pages/about-project.php', compact('page')),
+            'my-books' => $this->myBooksIndexPage($page),
             'blog-index' => $this->blogIndexPage($page),
             'library-index' => $this->libraryIndexPage($page),
             'movies-index' => $this->moviesIndexPage($page),
@@ -52,6 +53,11 @@ final class StaticPagesController implements DynamicsInterface
     {
         $movies = (new MoviesRepository)->getAllEnableMovies(getLocale(), 'DESC');
         return renderView('v3/templates/movies/index.php', compact('page', 'movies'));
+    }
+
+    final public function myBooksIndexPage($page)
+    {
+        return renderView('v3/templates/my-books/index.php', compact('page'));
     }
 
     final public function sitemapIndexPage($page)
