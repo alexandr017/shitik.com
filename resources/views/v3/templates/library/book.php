@@ -1,6 +1,6 @@
 <?php
 
-$mainModules = ['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/author', 'modules/content',
+$mainModules = ['modules/general', 'modules/fonts', 'modules/header', 'modules/breadcrumb', 'modules/author', 'modules/content', 'modules/comments',
     'modules/sidebar', 'modules/footer', 'modules/library/library', 'modules/library/library-list', 'modules/library/book-card'];
 $additionalModules = [];
 
