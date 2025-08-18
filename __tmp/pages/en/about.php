@@ -121,7 +121,7 @@ include DOCUMENT_ROOT . '/view/v3/head.php';
         <p>You can also subscribe to my public pages to stay updated on new news and articles:</p>
         <ul>
             <li><a rel="noopener" href="https://www.facebook.com/groups/1634020277998483" target="_blank">Facebook</a></li>
-            <li><a rel="noopener" href="https://whatsapp.com/channel/0029Vazzhcl6hENqdwjdpH2t" target="_blank">WhatsApp</a></li>
+            <li><a rel="noopener" href="https://www.whatsapp.com/channel/0029VbBOueF2Jl8BBbawQS15" target="_blank">WhatsApp</a></li>
             <li><a rel="noopener" href="https://t.me/shitikcom" target="_blank">Telegram</a></li>
         </ul>
 

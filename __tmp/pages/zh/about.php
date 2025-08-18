@@ -124,7 +124,7 @@ include DOCUMENT_ROOT . '/view/v3/head.php';
         <p>您还可以关注我的公共账号，以便不会错过新新闻和文章的发布：</p>
         <ul>
             <li><a rel="noopener" href="https://www.facebook.com/groups/1634020277998483" target="_blank">Facebook</a></li>
-            <li><a rel="noopener" href="https://whatsapp.com/channel/0029Vazzhcl6hENqdwjdpH2t" target="_blank">WhatsApp</a></li>
+            <li><a rel="noopener" href="https://www.whatsapp.com/channel/0029VbBOueF2Jl8BBbawQS15" target="_blank">WhatsApp</a></li>
             <li><a rel="noopener" href="https://t.me/shitikcom" target="_blank">Telegram</a></li>
         </ul>
 

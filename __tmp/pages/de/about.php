@@ -114,7 +114,7 @@ include DOCUMENT_ROOT . '/view/v3/head.php';
         <p>Außerdem kannst du meine öffentlichen Seiten abonnieren, um keine neuen Nachrichten und Artikel zu verpassen::</p>
         <ul>
             <li>Facebook: <a rel="noopener" href="https://www.facebook.com/groups/1634020277998483" target="_blank">Facebook</a></li>
-            <li>WhatsApp: <a rel="noopener" href="https://whatsapp.com/channel/0029Vazzhcl6hENqdwjdpH2t" target="_blank">WhatsApp</a></li>
+            <li>WhatsApp: <a rel="noopener" href="https://www.whatsapp.com/channel/0029VbBOueF2Jl8BBbawQS15" target="_blank">WhatsApp</a></li>
             <li>Telegram: <a rel="noopener" href="https://t.me/shitikcom" target="_blank">Telegram</a></li>
         </ul>
 
