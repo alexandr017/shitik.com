@@ -16,6 +16,8 @@ echo renderView('v3/modules/head.php');
                 textarea {
                     width: 100%;
                     height: 150px;
+                    caret-color: #000000;
+                    padding: 5px;
                 }
             </style>
             <textarea id="textInput" placeholder="Введите текст..."></textarea>
