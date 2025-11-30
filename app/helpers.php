@@ -143,8 +143,8 @@ function contentRender(string $content) : string
         $content = str_replace("[blog_imdb_movies_table_$currentLang]", $blogImdbMoviesTable, $content);
     }
 
-    $blog_kinopoisk_movies_table_ru = file_get_contents(DOCUMENT_ROOT . '/resources/views/v3/shortcodes/ru/blog_kinopoisk_movies_table_ru.php');
-    $content = str_replace('[blog_kinopoisk_movies_table_ru]', $blog_kinopoisk_movies_table_ru, $content);
+    $blog_kinopoisk_movies_table_ru = file_get_contents(DOCUMENT_ROOT . "/resources/views/v3/shortcodes/$currentLang/blog_kinopoisk_movies_table_$currentLang.php");
+    $content = str_replace("[blog_kinopoisk_movies_table_$currentLang]", $blog_kinopoisk_movies_table_ru, $content);
 
     return $content;
 }
